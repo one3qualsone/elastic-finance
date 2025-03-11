@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root variables for light mode (default) */
+:root {
+  --foreground-rgb: 15, 23, 42;
+  --background-rgb: 248, 250, 252;
+  --primary-light: 226, 232, 240;
+  --primary-medium: 148, 163, 184;
+  --primary-dark: 71, 85, 105;
+  --accent-light: 224, 242, 254;
+  --accent-medium: 56, 189, 248; 
+  --accent-dark: 2, 132, 199;
+  --success-color: 34, 197, 94;
+  --warning-color: 234, 179, 8;
+  --error-color: 239, 68, 68;
+  --card-bg: 255, 255, 255;
+  --card-border: 241, 245, 249;
+}
+
+/* Dark mode variables */
+.dark {
+  --foreground-rgb: 248, 250, 252;
+  --background-rgb: 15, 23, 42;
+  --primary-light: 51, 65, 85;
+  --primary-medium: 71, 85, 105;
+  --primary-dark: 148, 163, 184;
+  --accent-light: 3, 105, 161;
+  --accent-medium: 14, 165, 233;
+  --accent-dark: 186, 230, 253;
+  --success-color: 22, 163, 74;
+  --warning-color: 202, 138, 4;
+  --error-color: 220, 38, 38;
+  --card-bg: 30, 41, 59;
+  --card-border: 51, 65, 85;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+@layer base {
+  h1 {
+    @apply text-3xl font-bold mb-4;
+  }
+  h2 {
+    @apply text-2xl font-bold mb-3;
+  }
+  h3 {
+    @apply text-xl font-semibold mb-2;
+  }
+  a {
+    @apply text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300;
+  }
+  table {
+    @apply w-full border-collapse;
+  }
+  th, td {
+    @apply border border-slate-200 dark:border-slate-700 p-2;
+  }
+  th {
+    @apply bg-slate-100 dark:bg-slate-800;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded font-medium focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500 dark:bg-blue-700 dark:hover:bg-blue-600;
+  }
+  
+  .btn-secondary {
+    @apply bg-teal-600 text-white hover:bg-teal-700 focus:ring-teal-500 dark:bg-teal-700 dark:hover:bg-teal-600;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-slate-800 rounded-lg shadow-md p-6 border border-slate-100 dark:border-slate-700;
+  }
+  
+  .input {
+    @apply w-full px-3 py-2 border border-slate-300 dark:border-slate-600 rounded-md bg-white dark:bg-slate-700 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+  }
+}
+
+/* Override for light mode pastel buttons */
+.light .btn-primary {
+  @apply bg-sky-500 hover:bg-sky-600;
+}
+
+.light .btn-secondary {
+  @apply bg-emerald-500 hover:bg-emerald-600;
+}
+
+/* Improve visibility for prose content */
+.prose img {
+  @apply rounded-lg shadow-md mx-auto my-8;
+}
+
+.prose a {
+  @apply text-blue-600 hover:text-blue-800 underline;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-blue-500 pl-4 italic my-4 text-slate-700 dark:text-slate-300;
+}
+
+.prose table {
+  @apply overflow-x-auto block my-6; 
+}
+/* Add styling for the value score bar */
+.value-score-bar {
+  @apply h-2.5 rounded-full transition-all duration-300 ease-in-out;
+}
+
+.value-score-bar-bullish {
+  @apply bg-green-500;
+}
+
+.value-score-bar-neutral {
+  @apply bg-yellow-500;
+}
+
+.value-score-bar-bearish {
+  @apply bg-red-500;
+}
