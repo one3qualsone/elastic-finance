@@ -1,0 +1,59 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#334155">Market Cycles and Investor Psychology</text>
+  
+  <!-- Main Cycle Path -->
+  <path d="M100,250 C150,150 250,100 400,100 S650,150 700,250 S650,400 400,400 S150,350 100,250" fill="none" stroke="#64748b" stroke-width="2" />
+  
+  <!-- Market Price Line -->
+  <path d="M100,250 C120,280 150,300 200,290 C250,280 280,200 350,150 C400,120 450,130 500,190 C550,250 600,280 650,250 C680,230 690,240 700,250" 
+        stroke="#3b82f6" stroke-width="4" fill="none" />
+  
+  <!-- Emotion Labels -->
+  <!-- Despair -->
+  <text x="130" y="290" font-family="Arial" font-size="14" fill="#1e3a8a" text-anchor="middle">Despair</text>
+  <line x1="130" y1="250" x2="130" y2="275" stroke="#1e3a8a" stroke-width="1" stroke-dasharray="3,3" />
+  
+  <!-- Hope -->
+  <text x="200" y="320" font-family="Arial" font-size="14" fill="#1e3a8a" text-anchor="middle">Hope</text>
+  <line x1="200" y1="290" x2="200" y2="305" stroke="#1e3a8a" stroke-width="1" stroke-dasharray="3,3" />
+  
+  <!-- Optimism -->
+  <text x="300" y="200" font-family="Arial" font-size="14" fill="#1e3a8a" text-anchor="middle">Optimism</text>
+  <line x1="300" y1="220" x2="300" y2="185" stroke="#1e3a8a" stroke-width="1" stroke-dasharray="3,3" />
+  
+  <!-- Euphoria -->
+  <text x="400" y="130" font-family="Arial" font-size="14" fill="#1e3a8a" text-anchor="middle">Euphoria</text>
+  <line x1="400" y1="150" x2="400" y2="115" stroke="#1e3a8a" stroke-width="1" stroke-dasharray="3,3" />
+  
+  <!-- Anxiety -->
+  <text x="500" y="220" font-family="Arial" font-size="14" fill="#1e3a8a" text-anchor="middle">Anxiety</text>
+  <line x1="500" y1="190" x2="500" y2="205" stroke="#1e3a8a" stroke-width="1" stroke-dasharray="3,3" />
+  
+  <!-- Panic -->
+  <text x="600" y="290" font-family="Arial" font-size="14" fill="#1e3a8a" text-anchor="middle">Panic</text>
+  <line x1="600" y1="270" x2="600" y2="275" stroke="#1e3a8a" stroke-width="1" stroke-dasharray="3,3" />
+  
+  <!-- Capitulation -->
+  <text x="650" y="230" font-family="Arial" font-size="14" fill="#1e3a8a" text-anchor="middle">Capitulation</text>
+  <line x1="650" y1="250" x2="650" y2="245" stroke="#1e3a8a" stroke-width="1" stroke-dasharray="3,3" />
+  
+  <!-- Psychology Zones -->
+  <!-- Fear Zone -->
+  <path d="M100,250 C120,280 150,300 200,290 C250,280 270,220 270,220 L270,400 L100,400 Z" fill="#fecdd3" fill-opacity="0.3" />
+  <text x="180" y="380" font-family="Arial" font-size="18" fill="#e11d48" font-weight="bold" text-anchor="middle">Fear</text>
+  <text x="180" y="350" font-family="Arial" font-size="14" fill="#e11d48" text-anchor="middle">Buy Opportunity</text>
+  
+  <!-- Greed Zone -->
+  <path d="M350,150 C400,120 450,130 500,190 L500,100 L350,100 Z" fill="#bfdbfe" fill-opacity="0.3" />
+  <text x="425" y="170" font-family="Arial" font-size="18" fill="#3b82f6" font-weight="bold" text-anchor="middle">Greed</text>
+  <text x="425" y="190" font-family="Arial" font-size="14" fill="#3b82f6" text-anchor="middle">Sell Opportunity</text>
+  
+  <!-- Value Investor Approach -->
+  <rect x="100" y="420" width="600" height="60" rx="5" ry="5" fill="#f1f5f9" stroke="#cbd5e1" />
+  <text x="400" y="445" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#334155">Warren Buffett's Approach</text>
+  <text x="400" y="465" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">"Be fearful when others are greedy, and greedy when others are fearful."</text>
+</svg>

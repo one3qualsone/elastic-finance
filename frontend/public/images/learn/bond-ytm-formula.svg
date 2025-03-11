@@ -1,0 +1,43 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#334155">Yield to Maturity (YTM) Formula</text>
+  
+  <!-- Formula Card -->
+  <rect x="100" y="100" width="600" height="150" rx="8" ry="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" />
+  
+  <!-- YTM Formula -->
+  <text x="400" y="140" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#1e40af">The Yield to Maturity Formula</text>
+  
+  <text x="400" y="200" font-family="Arial" font-size="20" text-anchor="middle" fill="#1e40af">P = ∑</text>
+  <text x="430" y="205" font-family="Arial" font-size="12" text-anchor="middle" fill="#1e40af">n</text>
+  <text x="430" y="195" font-family="Arial" font-size="12" text-anchor="middle" fill="#1e40af">t=1</text>
+  
+  <text x="490" y="200" font-family="Arial" font-size="20" text-anchor="middle" fill="#1e40af">C/(1+r)ᵗ + F/(1+r)ⁿ</text>
+  
+  <!-- Variables explanation -->
+  <rect x="150" y="270" width="500" height="160" rx="8" ry="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1" />
+  <text x="400" y="300" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#334155">Where:</text>
+  
+  <text x="180" y="330" font-family="Arial" font-size="16" fill="#334155">P = current bond price</text>
+  <text x="180" y="360" font-family="Arial" font-size="16" fill="#334155">C = coupon payment (semi-annual or annual)</text>
+  <text x="180" y="390" font-family="Arial" font-size="16" fill="#334155">F = face value (par value) of the bond</text>
+  <text x="180" y="420" font-family="Arial" font-size="16" fill="#334155">n = number of periods (years or semi-annual periods)</text>
+  <text x="180" y="450" font-family="Arial" font-size="16" fill="#334155">r = yield to maturity (what we're solving for)</text>
+  
+  <!-- Solve method note -->
+  <rect x="100" y="450" width="600" height="30" rx="5" ry="5" fill="#fee2e2" />
+  <text x="400" y="470" font-family="Arial" font-size="14" text-anchor="middle" fill="#9f1239">
+    Note: This equation must be solved through trial-and-error or using financial calculators
+  </text>
+  
+  <!-- Example -->
+  <rect x="620" y="310" width="150" height="110" rx="8" ry="8" fill="#dcfce7" stroke="#22c55e" stroke-width="1" />
+  <text x="695" y="330" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#166534">Example</text>
+  <text x="695" y="350" font-family="Arial" font-size="12" text-anchor="middle" fill="#166534">$1,000 par value bond</text>
+  <text x="695" y="370" font-family="Arial" font-size="12" text-anchor="middle" fill="#166534">$50 annual coupon</text>
+  <text x="695" y="390" font-family="Arial" font-size="12" text-anchor="middle" fill="#166534">Price: $950</text>
+  <text x="695" y="410" font-family="Arial" font-size="12" text-anchor="middle" fill="#166534">YTM ≈ 5.79%</text>
+</svg>

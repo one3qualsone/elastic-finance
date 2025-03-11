@@ -1,0 +1,69 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#334155">Small Business Model</text>
+  
+  <!-- Owner Box -->
+  <rect x="100" y="200" width="180" height="100" rx="8" ry="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" />
+  <text x="190" y="240" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#1e40af">OWNER(S)</text>
+  <text x="190" y="270" font-family="Arial" font-size="14" text-anchor="middle" fill="#1e3a8a">Nancy</text>
+  
+  <!-- Business Box -->
+  <rect x="310" y="130" width="180" height="240" rx="8" ry="8" fill="#bbf7d0" stroke="#22c55e" stroke-width="2" />
+  <text x="400" y="170" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#166534">BUSINESS</text>
+  <text x="400" y="200" font-family="Arial" font-size="14" text-anchor="middle" fill="#166534">Ice Cream Stand</text>
+  
+  <!-- Business Building Drawing inside Business Box -->
+  <rect x="360" y="220" width="80" height="60" fill="#ffffff" stroke="#64748b" stroke-width="1" />
+  <path d="M355,220 L400,190 L445,220" fill="#94a3b8" stroke="#64748b" stroke-width="1" />
+  <rect x="385" y="245" width="30" height="35" fill="#f8fafc" stroke="#64748b" stroke-width="1" />
+  
+  <!-- Customers Box -->
+  <rect x="520" y="200" width="180" height="100" rx="8" ry="8" fill="#fecdd3" stroke="#f43f5e" stroke-width="2" />
+  <text x="610" y="240" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#9f1239">CUSTOMERS</text>
+  <text x="610" y="270" font-family="Arial" font-size="14" text-anchor="middle" fill="#9f1239">Local Patrons</text>
+  
+  <!-- Flow Arrows -->
+  <!-- Owner to Business: Investment/Capital -->
+  <path d="M280,225 L310,225" fill="none" stroke="#3b82f6" stroke-width="2" marker-end="url(#blue-arrow)" />
+  <text x="295" y="215" font-family="Arial" font-size="12" fill="#3b82f6">Investment</text>
+  
+  <!-- Business to Owner: Profits -->
+  <path d="M310,265 L280,265" fill="none" stroke="#22c55e" stroke-width="2" marker-end="url(#green-arrow)" />
+  <text x="295" y="285" font-family="Arial" font-size="12" fill="#22c55e">Profits</text>
+  
+  <!-- Customers to Business: Revenue -->
+  <path d="M520,225 L490,225" fill="none" stroke="#f43f5e" stroke-width="2" marker-end="url(#red-arrow)" />
+  <text x="505" y="215" font-family="Arial" font-size="12" fill="#f43f5e">Money</text>
+  
+  <!-- Business to Customers: Products/Services -->
+  <path d="M490,265 L520,265" fill="none" stroke="#22c55e" stroke-width="2" marker-end="url(#green-arrow)" />
+  <text x="505" y="285" font-family="Arial" font-size="12" fill="#22c55e">Ice Cream</text>
+  
+  <!-- Define arrow markers -->
+  <defs>
+    <marker id="blue-arrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6" />
+    </marker>
+    <marker id="green-arrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#22c55e" />
+    </marker>
+    <marker id="red-arrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f43f5e" />
+    </marker>
+  </defs>
+  
+  <!-- Stock Ownership Comparison -->
+  <rect x="100" y="380" width="600" height="100" rx="8" ry="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1" />
+  <text x="400" y="405" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#334155">How Stock Ownership Works</text>
+  
+  <rect x="140" y="425" width="240" height="40" rx="5" ry="5" fill="#dbeafe" />
+  <text x="260" y="450" font-family="Arial" font-size="14" text-anchor="middle" fill="#1e40af">Small Business Owner</text>
+  <text x="260" y="470" font-family="Arial" font-size="11" text-anchor="middle" fill="#334155">Directly owns a whole business</text>
+  
+  <rect x="420" y="425" width="240" height="40" rx="5" ry="5" fill="#fef3c7" />
+  <text x="540" y="450" font-family="Arial" font-size="14" text-anchor="middle" fill="#ca8a04">Stock Market Investor</text>
+  <text x="540" y="470" font-family="Arial" font-size="11" text-anchor="middle" fill="#334155">Owns a fraction of a larger business</text>
+</svg>

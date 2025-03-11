@@ -1,0 +1,59 @@
+# .github/workflows/azure-deploy.yml
+name: Deploy to Azure
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    # Create images directory and placeholders
+    - name: Setup Images
+      run: |
+        mkdir -p ./public/images/learn
+        node scripts/setup-images.js
+    
+    # Login to Azure
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    
+    # Deploy Backend to Azure App Service
+    - name: Deploy Backend
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: ${{ secrets.AZURE_BACKEND_APP_NAME }}
+        package: ./backend
+    
+    # Build Frontend
+    - name: Build Frontend
+      run: |
+        cd frontend
+        npm ci
+        npm run build
+    
+    # Deploy Frontend to Azure Static Web Apps
+    - name: Deploy Frontend
+      uses: azure/static-web-apps-deploy@v1
+      with:
+        azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        action: "upload"
+        app_location: "frontend"
+        api_location: "" # No API here, as our backend is deployed separately
+        output_location: "out" # Adjust based on your Next.js export output
+      env:
+        NEXT_PUBLIC_API_URL: https://${{ secrets.AZURE_BACKEND_APP_NAME }}.azurewebsites.net/api

@@ -1,3 +1,4 @@
+// frontend/src/app/learn/page.jsx (modified)
 'use client';
 
 import { useState, useEffect, Suspense } from 'react';
@@ -5,6 +6,7 @@ import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getArticlesByLevel } from '@/lib/learn/contentService';
+import ComingSoonPlaceholder from '@/components/learn/ComingSoonPlaceholder';
 
 // Separate component that uses useSearchParams
 function LearningContent() {
@@ -42,6 +44,67 @@ function LearningContent() {
     
     loadArticles();
   }, [activeTab]);
+
+  // Render different content based on the active tab
+  const renderContent = () => {
+    if (isLoading) {
+      return (
+        <div className="flex justify-center items-center py-20">
+          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
+        </div>
+      );
+    }
+
+    // For intermediate and advanced sections, show placeholder
+    if (activeTab !== 'beginner') {
+      return <ComingSoonPlaceholder level={activeTab} />;
+    }
+
+    // For beginner section, show article cards
+    return articles.length > 0 ? (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {articles.map((article) => (
+          <Link
+            key={article.slug}
+            href={`/learn/${activeTab}/${article.slug}`}
+            className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+          >
+            <div className="relative h-48 w-full bg-gray-200 dark:bg-gray-700">
+              {article.imagePath && (
+                <Image
+                  src={article.imagePath}
+                  alt={article.title}
+                  fill
+                  className="object-cover"
+                />
+              )}
+            </div>
+            <div className="p-6">
+              <div className="text-sm text-blue-600 dark:text-blue-400 mb-2">
+                Lesson {article.order}
+              </div>
+              <h3 className="text-xl font-semibold mb-2">{article.title}</h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-4">
+                {article.description}
+              </p>
+              <div className="text-blue-600 dark:text-blue-400 hover:underline">
+                Read more →
+              </div>
+            </div>
+          </Link>
+        ))}
+      </div>
+    ) : (
+      <div className="text-center py-20">
+        <h3 className="text-xl text-gray-600 dark:text-gray-400">
+          No articles available for this level yet.
+        </h3>
+        <p className="mt-2">
+          Please check back later or try another skill level.
+        </p>
+      </div>
+    );
+  };
 
   return (
     <>
@@ -81,50 +144,8 @@ function LearningContent() {
         </div>
       </div>
       
-      {/* Article Grid */}
-      {isLoading ? (
-        <div className="flex justify-center items-center py-20">
-          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
-        </div>
-      ) : articles.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {articles.map((article) => (
-            <Link
-              key={article.slug}
-              href={`/learn/${activeTab}/${article.slug}`}
-              className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
-            >
-              <div className="relative h-48 w-full bg-gray-200 dark:bg-gray-700">
-                {/* This would be an actual image in production */}
-                <div className="absolute inset-0 flex items-center justify-center text-gray-500 dark:text-gray-400">
-                  <span className="text-sm">Image: {article.imagePath}</span>
-                </div>
-              </div>
-              <div className="p-6">
-                <div className="text-sm text-blue-600 dark:text-blue-400 mb-2">
-                  Lesson {article.order}
-                </div>
-                <h3 className="text-xl font-semibold mb-2">{article.title}</h3>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  {article.description}
-                </p>
-                <div className="text-blue-600 dark:text-blue-400 hover:underline">
-                  Read more →
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
-      ) : (
-        <div className="text-center py-20">
-          <h3 className="text-xl text-gray-600 dark:text-gray-400">
-            No articles available for this level yet.
-          </h3>
-          <p className="mt-2">
-            Please check back later or try another skill level.
-          </p>
-        </div>
-      )}
+      {/* Content Area */}
+      {renderContent()}
       
       {/* Resources Section */}
       <div className="mt-16 pt-10 border-t border-gray-200 dark:border-gray-700">
@@ -151,7 +172,7 @@ function LearningContent() {
             <p className="text-gray-600 dark:text-gray-400">
               Follow our structured learning path to master value investing from the basics to advanced techniques.
             </p>
-            <a href="/learn/path" className="text-blue-600 dark:text-blue-400 hover:underline block mt-2">
+            <a href="/learn?tab=beginner" className="text-blue-600 dark:text-blue-400 hover:underline block mt-2">
               View Learning Path →
             </a>
           </div>

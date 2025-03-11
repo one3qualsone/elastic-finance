@@ -1,0 +1,62 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#334155">The Anatomy of a Bond</text>
+  
+  <!-- Main Bond Certificate -->
+  <rect x="150" y="100" width="500" height="300" fill="#ffffff" stroke="#64748b" stroke-width="2" rx="5" ry="5" />
+  <path d="M150,100 L650,100 L650,400 L150,400 Z" fill="none" stroke="#64748b" stroke-width="1" stroke-dasharray="2,2" />
+  
+  <!-- Bond Header -->
+  <rect x="170" y="120" width="460" height="60" fill="#f1f5f9" rx="5" ry="5" />
+  <text x="400" y="155" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold" fill="#0f172a">CORPORATE BOND</text>
+  <text x="400" y="175" font-family="Arial" font-size="14" text-anchor="middle" fill="#64748b">Example Corporation</text>
+  
+  <!-- Issuer Section -->
+  <rect x="170" y="200" width="180" height="80" fill="#dbeafe" rx="5" ry="5" />
+  <text x="260" y="225" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#1e40af">1. ISSUER</text>
+  <text x="260" y="250" font-family="Arial" font-size="14" text-anchor="middle" fill="#1e3a8a">Example Corporation</text>
+  <text x="260" y="270" font-family="Arial" font-size="12" text-anchor="middle" fill="#1e3a8a">(The borrower)</text>
+  
+  <!-- Par Value Section -->
+  <rect x="170" y="290" width="180" height="80" fill="#bbf7d0" rx="5" ry="5" />
+  <text x="260" y="315" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#166534">2. PAR VALUE</text>
+  <text x="260" y="340" font-family="Arial" font-size="14" text-anchor="middle" fill="#166534">$1,000</text>
+  <text x="260" y="360" font-family="Arial" font-size="12" text-anchor="middle" fill="#166534">(Amount repaid at maturity)</text>
+  
+  <!-- Coupon Rate Section -->
+  <rect x="360" y="200" width="180" height="80" fill="#fef3c7" rx="5" ry="5" />
+  <text x="450" y="225" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#854d0e">3. COUPON RATE</text>
+  <text x="450" y="250" font-family="Arial" font-size="14" text-anchor="middle" fill="#854d0e">5.0% Annual Interest</text>
+  <text x="450" y="270" font-family="Arial" font-size="12" text-anchor="middle" fill="#854d0e">($50 per year, paid semi-annually)</text>
+  
+  <!-- Maturity Date Section -->
+  <rect x="360" y="290" width="180" height="80" fill="#fecdd3" rx="5" ry="5" />
+  <text x="450" y="315" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#9f1239">4. MATURITY DATE</text>
+  <text x="450" y="340" font-family="Arial" font-size="14" text-anchor="middle" fill="#9f1239">January 15, 2033</text>
+  <text x="450" y="360" font-family="Arial" font-size="12" text-anchor="middle" fill="#9f1239">(When principal will be repaid)</text>
+  
+  <!-- Market Value Callout -->
+  <rect x="200" y="430" width="400" height="50" rx="5" ry="5" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="1" />
+  <text x="400" y="455" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#0c4a6e">5. MARKET VALUE</text>
+  <text x="400" y="475" font-family="Arial" font-size="12" text-anchor="middle" fill="#0c4a6e">The price bonds trade for in the secondary market (fluctuates with interest rates)</text>
+  
+  <!-- Arrow from market value to bond -->
+  <path d="M400,430 L400,410" fill="none" stroke="#0ea5e9" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Define arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0ea5e9" />
+    </marker>
+  </defs>
+  
+  <!-- Bond Flow Arrows -->
+  <path d="M125,200 C50,250 50,350 125,400" fill="none" stroke="#64748b" stroke-width="1.5" stroke-dasharray="5,3" />
+  <text x="70" y="300" font-family="Arial" font-size="14" text-anchor="middle" fill="#64748b" transform="rotate(-90 70,300)">Bond Lifecycle</text>
+  
+  <path d="M675,200 C750,250 750,350 675,400" fill="none" stroke="#64748b" stroke-width="1.5" stroke-dasharray="5,3" />
+  <text x="730" y="300" font-family="Arial" font-size="14" text-anchor="middle" fill="#64748b" transform="rotate(90 730,300)">Bond Lifecycle</text>
+</svg>

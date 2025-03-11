@@ -1,0 +1,86 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#334155">Bond Value When Interest Rates Fall</text>
+  
+  <!-- Main Chart Container -->
+  <rect x="100" y="100" width="600" height="300" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+  
+  <!-- Y-Axis (Bond Value) -->
+  <line x1="100" y1="100" x2="100" y2="400" stroke="#64748b" stroke-width="2" />
+  <text x="60" y="250" font-family="Arial" font-size="14" fill="#334155" transform="rotate(-90, 60, 250)">Bond Value ($)</text>
+  
+  <!-- Y-Axis Values -->
+  <line x1="95" y1="150" x2="105" y2="150" stroke="#64748b" stroke-width="1" />
+  <text x="85" y="155" font-family="Arial" font-size="12" text-anchor="end" fill="#64748b">$1,100</text>
+  
+  <line x1="95" y1="250" x2="105" y2="250" stroke="#64748b" stroke-width="1" />
+  <text x="85" y="255" font-family="Arial" font-size="12" text-anchor="end" fill="#64748b">$1,000</text>
+  
+  <line x1="95" y1="350" x2="105" y2="350" stroke="#64748b" stroke-width="1" />
+  <text x="85" y="355" font-family="Arial" font-size="12" text-anchor="end" fill="#64748b">$900</text>
+  
+  <!-- X-Axis (Time to Maturity) -->
+  <line x1="100" y1="400" x2="700" y2="400" stroke="#64748b" stroke-width="2" />
+  <text x="400" y="430" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Years to Maturity</text>
+  
+  <!-- X-Axis Values -->
+  <line x1="150" y1="395" x2="150" y2="405" stroke="#64748b" stroke-width="1" />
+  <text x="150" y="420" font-family="Arial" font-size="12" text-anchor="middle" fill="#64748b">25</text>
+  
+  <line x1="250" y1="395" x2="250" y2="405" stroke="#64748b" stroke-width="1" />
+  <text x="250" y="420" font-family="Arial" font-size="12" text-anchor="middle" fill="#64748b">20</text>
+  
+  <line x1="350" y1="395" x2="350" y2="405" stroke="#64748b" stroke-width="1" />
+  <text x="350" y="420" font-family="Arial" font-size="12" text-anchor="middle" fill="#64748b">15</text>
+  
+  <line x1="450" y1="395" x2="450" y2="405" stroke="#64748b" stroke-width="1" />
+  <text x="450" y="420" font-family="Arial" font-size="12" text-anchor="middle" fill="#64748b">10</text>
+  
+  <line x1="550" y1="395" x2="550" y2="405" stroke="#64748b" stroke-width="1" />
+  <text x="550" y="420" font-family="Arial" font-size="12" text-anchor="middle" fill="#64748b">5</text>
+  
+  <line x1="650" y1="395" x2="650" y2="405" stroke="#64748b" stroke-width="1" />
+  <text x="650" y="420" font-family="Arial" font-size="12" text-anchor="middle" fill="#64748b">0</text>
+  
+  <!-- Par Value Horizontal Line -->
+  <line x1="100" y1="250" x2="700" y2="250" stroke="#64748b" stroke-width="1" stroke-dasharray="5,5" />
+  <text x="120" y="245" font-family="Arial" font-size="12" fill="#64748b">Par Value</text>
+  
+  <!-- Bond Price Curve -->
+  <path d="M150,150 C200,170 300,190 400,210 C500,230 600,245 650,250" 
+        fill="none" stroke="#22c55e" stroke-width="3" />
+  
+  <!-- Data Points -->
+  <circle cx="150" cy="150" r="5" fill="#22c55e" />
+  <circle cx="250" cy="170" r="5" fill="#22c55e" />
+  <circle cx="350" cy="190" r="5" fill="#22c55e" />
+  <circle cx="450" cy="210" r="5" fill="#22c55e" />
+  <circle cx="550" cy="230" r="5" fill="#22c55e" />
+  <circle cx="650" cy="250" r="5" fill="#22c55e" />
+  
+  <!-- Point Annotations -->
+  <text x="135" y="135" font-family="Arial" font-size="12" fill="#166534">$1,150</text>
+  <text x="240" y="155" font-family="Arial" font-size="12" fill="#166534">$1,130</text>
+  <text x="340" y="175" font-family="Arial" font-size="12" fill="#166534">$1,110</text>
+  <text x="440" y="195" font-family="Arial" font-size="12" fill="#166534">$1,090</text>
+  <text x="540" y="215" font-family="Arial" font-size="12" fill="#166534">$1,020</text>
+  <text x="650" y="235" font-family="Arial" font-size="12" fill="#166534">$1,000</text>
+  
+  <!-- Key Explanation -->
+  <rect x="150" y="450" width="500" height="30" rx="5" ry="5" fill="#bbf7d0" />
+  <text x="400" y="470" font-family="Arial" font-size="14" text-anchor="middle" fill="#166534">
+    When interest rates fall, existing bond prices rise
+  </text>
+  
+  <!-- Scenario Box -->
+  <rect x="480" y="120" width="200" height="100" rx="8" ry="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1" />
+  <text x="580" y="140" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#334155">SCENARIO</text>
+  <text x="490" y="165" font-family="Arial" font-size="12" fill="#334155">• Original bond: 5% coupon</text>
+  <text x="490" y="185" font-family="Arial" font-size="12" fill="#334155">• Interest rates fall to 4%</text>
+  <text x="490" y="205" font-family="Arial" font-size="12" fill="#334155">• New bonds now pay only 4%</text>
+  <text x="580" y="225" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic" fill="#166534">Bond now commands premium</text>
+  <text x="580" y="240" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic" fill="#166534">due to higher coupon</text>
+</svg>

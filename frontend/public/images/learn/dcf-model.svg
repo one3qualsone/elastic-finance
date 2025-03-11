@@ -1,0 +1,61 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#334155">Margin of Safety Calculation</text>
+  
+  <!-- Vertical Stock Value Scale -->
+  <line x1="150" y1="100" x2="150" y2="400" stroke="#64748b" stroke-width="2" />
+  <text x="120" y="250" font-family="Arial" font-size="16" font-weight="bold" fill="#334155" transform="rotate(-90, 120, 250)">Stock Value</text>
+  
+  <!-- Value Scale Markers -->
+  <line x1="140" y1="150" x2="150" y2="150" stroke="#64748b" stroke-width="2" />
+  <text x="130" y="155" font-family="Arial" font-size="12" text-anchor="end" fill="#64748b">$100</text>
+  
+  <line x1="140" y1="250" x2="150" y2="250" stroke="#64748b" stroke-width="2" />
+  <text x="130" y="255" font-family="Arial" font-size="12" text-anchor="end" fill="#64748b">$50</text>
+  
+  <line x1="140" y1="350" x2="150" y2="350" stroke="#64748b" stroke-width="2" />
+  <text x="130" y="355" font-family="Arial" font-size="12" text-anchor="end" fill="#64748b">$0</text>
+  
+  <!-- Intrinsic Value Bar -->
+  <rect x="200" y="150" width="100" height="200" fill="#bbf7d0" stroke="#22c55e" stroke-width="2" rx="5" ry="5" />
+  <text x="250" y="130" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#166534">INTRINSIC VALUE</text>
+  <text x="250" y="250" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold" fill="#166534">$100</text>
+  <text x="250" y="370" font-family="Arial" font-size="12" text-anchor="middle" fill="#166534">Calculated using DCF,</text>
+  <text x="250" y="385" font-family="Arial" font-size="12" text-anchor="middle" fill="#166534">earnings power, or</text>
+  <text x="250" y="400" font-family="Arial" font-size="12" text-anchor="middle" fill="#166534">asset-based methods</text>
+  
+  <!-- Buy Price Bar -->
+  <rect x="500" y="200" width="100" height="150" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2" rx="5" ry="5" />
+  <text x="550" y="130" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#1e40af">BUY PRICE</text>
+  <text x="550" y="250" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold" fill="#1e40af">$70</text>
+  <text x="550" y="370" font-family="Arial" font-size="12" text-anchor="middle" fill="#1e40af">Maximum price you're</text>
+  <text x="550" y="385" font-family="Arial" font-size="12" text-anchor="middle" fill="#1e40af">willing to pay based on</text>
+  <text x="550" y="400" font-family="Arial" font-size="12" text-anchor="middle" fill="#1e40af">your margin of safety</text>
+  
+  <!-- Margin of Safety Area -->
+  <rect x="300" y="150" width="200" height="50" fill="#dcfce7" stroke="#22c55e" stroke-width="1" stroke-dasharray="5,3" />
+  <text x="400" y="180" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#166534">MARGIN OF SAFETY: 30%</text>
+  
+  <!-- Connection Arrow -->
+  <path d="M300,250 L500,250" fill="none" stroke="#64748b" stroke-width="1.5" stroke-dasharray="5,3" />
+  <path d="M495,245 L500,250 L495,255" fill="#64748b" stroke="none" />
+  <path d="M305,245 L300,250 L305,255" fill="#64748b" stroke="none" />
+  
+  <!-- Formula Box -->
+  <rect x="325" y="270" width="150" height="70" rx="5" ry="5" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" />
+  <text x="400" y="290" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#334155">Formula:</text>
+  <text x="400" y="315" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Buy Price = Intrinsic Value</text>
+  <text x="400" y="330" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">× (1 - Margin of Safety)</text>
+  
+  <!-- Calculation Example -->
+  <rect x="150" y="430" width="500" height="50" rx="8" ry="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" />
+  <text x="400" y="455" font-family="Arial" font-size="14" text-anchor="middle" fill="#92400e">
+    Example: $100 × (1 - 0.3) = $100 × 0.7 = $70
+  </text>
+  <text x="400" y="475" font-family="Arial" font-size="12" text-anchor="middle" fill="#92400e">
+    With 30% margin of safety, maximum buy price is $70
+  </text>
+</svg>

@@ -1,0 +1,71 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#334155">Money Flow in Nancy's Ice Cream Stand</text>
+  
+  <!-- Main Flow Diagram -->
+  <rect x="150" y="100" width="500" height="300" rx="8" ry="8" fill="#ffffff" stroke="#64748b" stroke-width="1" />
+  
+  <!-- Revenue Section -->
+  <rect x="170" y="120" width="460" height="50" rx="5" ry="5" fill="#dbeafe" />
+  <text x="230" y="150" font-family="Arial" font-size="16" font-weight="bold" fill="#1e40af">REVENUE (Sales)</text>
+  <text x="580" y="150" font-family="Arial" font-size="16" font-weight="bold" text-anchor="end" fill="#1e40af">$100,000</text>
+  
+  <!-- Minus sign -->
+  <text x="400" y="185" font-family="Arial" font-size="20" text-anchor="middle" fill="#64748b">−</text>
+  
+  <!-- Costs Section -->
+  <rect x="170" y="200" width="460" height="100" rx="5" ry="5" fill="#fecdd3" />
+  <text x="230" y="225" font-family="Arial" font-size="16" font-weight="bold" fill="#9f1239">COSTS</text>
+  
+  <!-- Cost Breakdown -->
+  <text x="200" y="250" font-family="Arial" font-size="14" fill="#334155">• Employee wages:</text>
+  <text x="580" y="250" font-family="Arial" font-size="14" text-anchor="end" fill="#334155">$20,000</text>
+  
+  <text x="200" y="275" font-family="Arial" font-size="14" fill="#334155">• Materials (ingredients, cups, etc.):</text>
+  <text x="580" y="275" font-family="Arial" font-size="14" text-anchor="end" fill="#334155">$40,000</text>
+  
+  <text x="200" y="300" font-family="Arial" font-size="14" fill="#334155">• Rent/property costs:</text>
+  <text x="580" y="300" font-family="Arial" font-size="14" text-anchor="end" fill="#334155">$10,000</text>
+  
+  <!-- Equals sign -->
+  <text x="400" y="325" font-family="Arial" font-size="20" text-anchor="middle" fill="#64748b">=</text>
+  
+  <!-- Income Before Taxes Section -->
+  <rect x="170" y="340" width="460" height="30" rx="5" ry="5" fill="#bbf7d0" />
+  <text x="230" y="360" font-family="Arial" font-size="16" font-weight="bold" fill="#166534">INCOME BEFORE TAXES</text>
+  <text x="580" y="360" font-family="Arial" font-size="16" font-weight="bold" text-anchor="end" fill="#166534">$30,000</text>
+  
+  <!-- Minus sign -->
+  <text x="400" y="385" font-family="Arial" font-size="20" text-anchor="middle" fill="#64748b">−</text>
+  
+  <!-- Taxes Section -->
+  <rect x="170" y="400" width="460" height="30" rx="5" ry="5" fill="#fef3c7" />
+  <text x="230" y="420" font-family="Arial" font-size="16" font-weight="bold" fill="#ca8a04">TAXES</text>
+  <text x="580" y="420" font-family="Arial" font-size="16" font-weight="bold" text-anchor="end" fill="#ca8a04">$10,000</text>
+  
+  <!-- Equals sign -->
+  <text x="400" y="445" font-family="Arial" font-size="20" text-anchor="middle" fill="#64748b">=</text>
+  
+  <!-- Net Income Section -->
+  <rect x="170" y="460" width="460" height="30" rx="5" ry="5" fill="#10b981" />
+  <text x="230" y="480" font-family="Arial" font-size="16" font-weight="bold" fill="#ffffff">NET INCOME (EARNINGS)</text>
+  <text x="580" y="480" font-family="Arial" font-size="16" font-weight="bold" text-anchor="end" fill="#ffffff">$20,000</text>
+  
+  <!-- Key Point Callout -->
+  <rect x="650" y="200" width="120" height="100" rx="5" ry="5" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="1" />
+  <text x="710" y="230" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#0c4a6e">KEY POINT</text>
+  <text x="710" y="255" font-family="Arial" font-size="12" text-anchor="middle" fill="#0c4a6e">This $20,000 net</text>
+  <text x="710" y="275" font-family="Arial" font-size="12" text-anchor="middle" fill="#0c4a6e">income is what</text>
+  <text x="710" y="295" font-family="Arial" font-size="12" text-anchor="middle" fill="#0c4a6e">belongs to the</text>
+  <text x="710" y="315" font-family="Arial" font-size="12" text-anchor="middle" fill="#0c4a6e">owner</text>
+  
+  <!-- Arrow from key point to net income -->
+  <path d="M650,250 L635,480" fill="none" stroke="#0ea5e9" stroke-width="1.5" stroke-dasharray="4,3" />
+  
+  <!-- Money Flow Labels -->
+  <text x="70" y="150" font-family="Arial" font-size="14" fill="#334155" transform="rotate(-90 70,150)">Money coming IN</text>
+  <text x="70" y="300" font-family="Arial" font-size="14" fill="#334155" transform="rotate(-90 70,300)">Money going OUT</text>
+</svg>

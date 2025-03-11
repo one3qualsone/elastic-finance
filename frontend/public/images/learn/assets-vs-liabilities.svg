@@ -1,0 +1,106 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#334155">Assets vs. Liabilities</text>
+  <text x="400" y="80" font-family="Arial" font-size="16" text-anchor="middle" fill="#64748b">The Fundamental Difference in Value Investing</text>
+  
+  <!-- Balance Scale Base -->
+  <rect x="370" y="350" width="60" height="20" fill="#64748b" rx="3" ry="3" />
+  <rect x="390" y="250" width="20" height="100" fill="#64748b" />
+  
+  <!-- Scale Arm -->
+  <line x1="200" y1="250" x2="600" y2="250" stroke="#64748b" stroke-width="10" stroke-linecap="round" />
+  
+  <!-- Left Scale Pan (Assets) -->
+  <line x1="200" y1="250" x2="200" y2="300" stroke="#64748b" stroke-width="3" />
+  <ellipse cx="200" cy="320" rx="80" ry="20" fill="#bbf7d0" stroke="#22c55e" stroke-width="2" />
+  
+  <!-- Right Scale Pan (Liabilities) -->
+  <line x1="600" y1="250" x2="600" y2="300" stroke="#64748b" stroke-width="3" />
+  <ellipse cx="600" cy="320" rx="80" ry="20" fill="#fecdd3" stroke="#f43f5e" stroke-width="2" />
+  
+  <!-- Assets Label -->
+  <text x="200" y="190" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold" fill="#166534">ASSETS</text>
+  <text x="200" y="215" font-family="Arial" font-size="14" text-anchor="middle" fill="#166534">Put money in your pocket</text>
+  
+  <!-- Liabilities Label -->
+  <text x="600" y="190" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold" fill="#9f1239">LIABILITIES</text>
+  <text x="600" y="215" font-family="Arial" font-size="14" text-anchor="middle" fill="#9f1239">Take money out of your pocket</text>
+  
+  <!-- Asset Items (showing on the scale) -->
+  <g transform="translate(170,270)">
+    <rect width="60" height="30" fill="#22c55e" rx="3" ry="3" />
+    <text x="30" y="20" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">Stock</text>
+  </g>
+  
+  <g transform="translate(160,290)">
+    <rect width="80" height="30" fill="#22c55e" rx="3" ry="3" />
+    <text x="40" y="20" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">Real Estate</text>
+  </g>
+  
+  <g transform="translate(180,250)">
+    <rect width="40" height="30" fill="#22c55e" rx="3" ry="3" />
+    <text x="20" y="20" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">Bonds</text>
+  </g>
+  
+  <!-- Liability Items (showing on the scale) -->
+  <g transform="translate(570,270)">
+    <rect width="60" height="30" fill="#f43f5e" rx="3" ry="3" />
+    <text x="30" y="20" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">Car Loan</text>
+  </g>
+  
+  <g transform="translate(560,290)">
+    <rect width="80" height="30" fill="#f43f5e" rx="3" ry="3" />
+    <text x="40" y="20" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">Credit Card</text>
+  </g>
+  
+  <!-- Asset Examples Box -->
+  <rect x="100" y="380" width="200" height="100" rx="8" ry="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2" />
+  <text x="200" y="400" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#166534">ASSETS EXAMPLES</text>
+  
+  <text x="120" y="425" font-family="Arial" font-size="14" fill="#334155">• Dividend-paying stocks</text>
+  <text x="120" y="445" font-family="Arial" font-size="14" fill="#334155">• Rental properties</text>
+  <text x="120" y="465" font-family="Arial" font-size="14" fill="#334155">• Business ownership</text>
+  
+  <!-- Liability Examples Box -->
+  <rect x="500" y="380" width="200" height="100" rx="8" ry="8" fill="#fef2f2" stroke="#f43f5e" stroke-width="2" />
+  <text x="600" y="400" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#9f1239">LIABILITIES EXAMPLES</text>
+  
+  <text x="520" y="425" font-family="Arial" font-size="14" fill="#334155">• Consumer debt</text>
+  <text x="520" y="445" font-family="Arial" font-size="14" fill="#334155">• Car payments</text>
+  <text x="520" y="465" font-family="Arial" font-size="14" fill="#334155">• Depreciating goods</text>
+  
+  <!-- Key Insight Box -->
+  <rect x="320" y="380" width="160" height="100" rx="8" ry="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1" />
+  <text x="400" y="410" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#334155">KEY INSIGHT</text>
+  
+  <text x="400" y="435" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Wealthy people focus on</text>
+  <text x="400" y="455" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">acquiring assets while</text>
+  <text x="400" y="475" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">minimizing liabilities</text>
+  
+  <!-- Money Flow Arrows -->
+  <path d="M200,140 L200,170" fill="none" stroke="#22c55e" stroke-width="2" marker-end="url(#green-arrow)" />
+  <text x="220" y="155" font-family="Arial" font-size="12" fill="#22c55e">Money IN</text>
+  
+  <path d="M600,170 L600,140" fill="none" stroke="#f43f5e" stroke-width="2" marker-end="url(#red-arrow)" />
+  <text x="620" y="155" font-family="Arial" font-size="12" fill="#f43f5e">Money OUT</text>
+  
+  <!-- Cash Icon -->
+  <rect x="185" y="110" width="30" height="20" fill="#22c55e" rx="2" ry="2" />
+  <text x="200" y="125" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">$</text>
+  
+  <rect x="585" y="110" width="30" height="20" fill="#f43f5e" rx="2" ry="2" />
+  <text x="600" y="125" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">$</text>
+  
+  <!-- Define arrow markers -->
+  <defs>
+    <marker id="green-arrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#22c55e" />
+    </marker>
+    <marker id="red-arrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f43f5e" />
+    </marker>
+  </defs>
+</svg>

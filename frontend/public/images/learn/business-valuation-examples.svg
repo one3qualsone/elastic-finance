@@ -1,0 +1,79 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#334155">Business Valuation: Price vs. Return</text>
+  
+  <!-- Ice Cream Stand Example -->
+  <rect x="100" y="90" width="600" height="120" rx="8" ry="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" />
+  <text x="400" y="115" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#1e40af">NANCY'S ICE CREAM STAND</text>
+  <text x="400" y="140" font-family="Arial" font-size="14" text-anchor="middle" fill="#1e40af">Annual Net Income: $20,000</text>
+  
+  <line x1="150" y1="155" x2="650" y2="155" stroke="#94a3b8" stroke-width="1" />
+  
+  <rect x="150" y="165" width="100" height="30" rx="3" ry="3" fill="#bfdbfe" />
+  <text x="200" y="185" font-family="Arial" font-size="12" text-anchor="middle" fill="#1e40af">Purchase Price</text>
+  
+  <rect x="300" y="165" width="100" height="30" rx="3" ry="3" fill="#bfdbfe" />
+  <text x="350" y="185" font-family="Arial" font-size="12" text-anchor="middle" fill="#1e40af">Annual Return</text>
+  
+  <rect x="440" y="165" width="160" height="30" rx="3" ry="3" fill="#bfdbfe" />
+  <text x="520" y="185" font-family="Arial" font-size="12" text-anchor="middle" fill="#1e40af">Return on Investment (ROI)</text>
+  
+  <!-- Three Valuation Scenarios -->
+  <!-- Scenario 1: High Price -->
+  <rect x="100" y="220" width="600" height="60" rx="8" ry="8" fill="#fecdd3" stroke="#f43f5e" stroke-width="1" />
+  <text x="130" y="255" font-family="Arial" font-size="14" font-weight="bold" fill="#9f1239">HIGH PRICE:</text>
+  
+  <rect x="150" y="235" width="100" height="30" rx="3" ry="3" fill="#fee2e2" />
+  <text x="200" y="255" font-family="Arial" font-size="14" text-anchor="middle" fill="#9f1239">$400,000</text>
+  
+  <rect x="300" y="235" width="100" height="30" rx="3" ry="3" fill="#fee2e2" />
+  <text x="350" y="255" font-family="Arial" font-size="14" text-anchor="middle" fill="#9f1239">$20,000</text>
+  
+  <rect x="440" y="235" width="160" height="30" rx="3" ry="3" fill="#fee2e2" />
+  <text x="520" y="255" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#9f1239">5%</text>
+  <text x="620" y="255" font-family="Arial" font-size="12" fill="#9f1239">Poor Return</text>
+  
+  <!-- Scenario 2: Medium Price -->
+  <rect x="100" y="290" width="600" height="60" rx="8" ry="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="1" />
+  <text x="130" y="325" font-family="Arial" font-size="14" font-weight="bold" fill="#ca8a04">MEDIUM PRICE:</text>
+  
+  <rect x="150" y="305" width="100" height="30" rx="3" ry="3" fill="#fef9c3" />
+  <text x="200" y="325" font-family="Arial" font-size="14" text-anchor="middle" fill="#ca8a04">$200,000</text>
+  
+  <rect x="300" y="305" width="100" height="30" rx="3" ry="3" fill="#fef9c3" />
+  <text x="350" y="325" font-family="Arial" font-size="14" text-anchor="middle" fill="#ca8a04">$20,000</text>
+  
+  <rect x="440" y="305" width="160" height="30" rx="3" ry="3" fill="#fef9c3" />
+  <text x="520" y="325" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#ca8a04">10%</text>
+  <text x="620" y="325" font-family="Arial" font-size="12" fill="#ca8a04">Average Return</text>
+  
+  <!-- Scenario 3: Low Price -->
+  <rect x="100" y="360" width="600" height="60" rx="8" ry="8" fill="#bbf7d0" stroke="#22c55e" stroke-width="1" />
+  <text x="130" y="395" font-family="Arial" font-size="14" font-weight="bold" fill="#166534">LOW PRICE:</text>
+  
+  <rect x="150" y="375" width="100" height="30" rx="3" ry="3" fill="#dcfce7" />
+  <text x="200" y="395" font-family="Arial" font-size="14" text-anchor="middle" fill="#166534">$100,000</text>
+  
+  <rect x="300" y="375" width="100" height="30" rx="3" ry="3" fill="#dcfce7" />
+  <text x="350" y="395" font-family="Arial" font-size="14" text-anchor="middle" fill="#166534">$20,000</text>
+  
+  <rect x="440" y="375" width="160" height="30" rx="3" ry="3" fill="#dcfce7" />
+  <text x="520" y="395" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#166534">20%</text>
+  <text x="620" y="395" font-family="Arial" font-size="12" fill="#166534">Excellent Return</text>
+  
+  <!-- Key Insight -->
+  <rect x="100" y="440" width="600" height="40" rx="8" ry="8" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="1" />
+  <text x="400" y="465" font-family="Arial" font-size="16" text-anchor="middle" fill="#0c4a6e">
+    The same business can be a good or bad investment depending on the price you pay
+  </text>
+  
+  <!-- Business Building Icon -->
+  <g transform="translate(630, 100) scale(0.7)">
+    <rect width="100" height="60" fill="#ffffff" stroke="#64748b" stroke-width="1" />
+    <polygon points="-5,0 50,-30 105,0" fill="#94a3b8" stroke="#64748b" stroke-width="1" />
+    <rect x="30" y="25" width="40" height="35" fill="#f8fafc" stroke="#64748b" stroke-width="1" />
+  </g>
+</svg>

@@ -1,0 +1,74 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#334155">Bond Current Yield</text>
+  
+  <!-- Formula Card -->
+  <rect x="150" y="90" width="500" height="80" rx="8" ry="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" />
+  
+  <!-- Current Yield Formula -->
+  <text x="400" y="120" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#1e40af">Current Yield Formula</text>
+  
+  <text x="400" y="155" font-family="Arial" font-size="18" text-anchor="middle" fill="#1e40af">Current Yield = Annual Coupon Payment ÷ Market Price</text>
+  
+  <!-- Example Scenarios -->
+  <text x="400" y="200" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#334155">Examples with Different Market Prices</text>
+  
+  <!-- Bond Details -->
+  <rect x="100" y="220" width="600" height="50" rx="5" ry="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1" />
+  <text x="400" y="250" font-family="Arial" font-size="16" text-anchor="middle" fill="#334155">
+    Bond with $1,000 face value and 5% coupon rate ($50 annual coupon)
+  </text>
+  
+  <!-- Discount Bond -->
+  <rect x="100" y="290" width="180" height="150" rx="8" ry="8" fill="#bbf7d0" stroke="#22c55e" stroke-width="2" />
+  <text x="190" y="315" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#166534">DISCOUNT BOND</text>
+  <text x="190" y="335" font-family="Arial" font-size="14" text-anchor="middle" fill="#166534">Market Price: $800</text>
+  
+  <rect x="120" y="350" width="140" height="70" rx="5" ry="5" fill="#dcfce7" />
+  <text x="190" y="370" font-family="Arial" font-size="14" text-anchor="middle" fill="#166534">Current Yield:</text>
+  <text x="190" y="400" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold" fill="#166534">6.25%</text>
+  <text x="190" y="420" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">($50 ÷ $800)</text>
+  
+  <!-- Par Bond -->
+  <rect x="310" y="290" width="180" height="150" rx="8" ry="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2" />
+  <text x="400" y="315" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#334155">PAR BOND</text>
+  <text x="400" y="335" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Market Price: $1,000</text>
+  
+  <rect x="330" y="350" width="140" height="70" rx="5" ry="5" fill="#f8fafc" />
+  <text x="400" y="370" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Current Yield:</text>
+  <text x="400" y="400" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold" fill="#334155">5.00%</text>
+  <text x="400" y="420" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">($50 ÷ $1,000)</text>
+  
+  <!-- Premium Bond -->
+  <rect x="520" y="290" width="180" height="150" rx="8" ry="8" fill="#fecdd3" stroke="#f43f5e" stroke-width="2" />
+  <text x="610" y="315" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#9f1239">PREMIUM BOND</text>
+  <text x="610" y="335" font-family="Arial" font-size="14" text-anchor="middle" fill="#9f1239">Market Price: $1,200</text>
+  
+  <rect x="540" y="350" width="140" height="70" rx="5" ry="5" fill="#fee2e2" />
+  <text x="610" y="370" font-family="Arial" font-size="14" text-anchor="middle" fill="#9f1239">Current Yield:</text>
+  <text x="610" y="400" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold" fill="#9f1239">4.17%</text>
+  <text x="610" y="420" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">($50 ÷ $1,200)</text>
+  
+  <!-- Key Insight -->
+  <rect x="100" y="460" width="600" height="40" rx="5" ry="5" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="1" />
+  <text x="400" y="485" font-family="Arial" font-size="16" text-anchor="middle" fill="#0c4a6e">
+    Bonds trading at a discount have higher current yields than their coupon rates
+  </text>
+  
+  <!-- Graph Visualization -->
+  <!-- X axis -->
+  <line x1="200" y1="430" x2="600" y2="430" stroke="#64748b" stroke-width="1" />
+  <!-- Y axis -->
+  <line x1="200" y1="430" x2="200" y2="350" stroke="#64748b" stroke-width="1" />
+  
+  <!-- Curve showing inverse relationship -->
+  <path d="M200,350 C300,380 500,400 600,420" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="5,3" />
+  
+  <!-- Points on curve -->
+  <circle cx="200" cy="370" r="5" fill="#166534" />
+  <circle cx="400" cy="400" r="5" fill="#334155" />
+  <circle cx="600" cy="420" r="5" fill="#9f1239" />
+</svg>

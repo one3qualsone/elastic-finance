@@ -1,0 +1,71 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#334155">Value vs. Emotional Investor Comparison</text>
+  
+  <!-- Two Columns -->
+  <rect x="100" y="90" width="280" height="390" rx="8" ry="8" fill="#bbf7d0" stroke="#22c55e" stroke-width="2" />
+  <text x="240" y="120" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#166534">VALUE INVESTOR</text>
+  <text x="240" y="140" font-family="Arial" font-size="14" text-anchor="middle" fill="#166534">(Amy)</text>
+  
+  <rect x="420" y="90" width="280" height="390" rx="8" ry="8" fill="#fecdd3" stroke="#f43f5e" stroke-width="2" />
+  <text x="560" y="120" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#9f1239">EMOTIONAL TRADER</text>
+  <text x="560" y="140" font-family="Arial" font-size="14" text-anchor="middle" fill="#9f1239">(Trevor)</text>
+  
+  <!-- Decision Making Process -->
+  <rect x="120" y="160" width="240" height="80" rx="5" ry="5" fill="#dcfce7" />
+  <text x="240" y="180" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#166534">DECISION MAKING</text>
+  <text x="140" y="200" font-family="Arial" font-size="12" fill="#334155">• Analyzes business fundamentals</text>
+  <text x="140" y="220" font-family="Arial" font-size="12" fill="#334155">• Calculates intrinsic value</text>
+  <text x="140" y="240" font-family="Arial" font-size="12" fill="#334155">• Waits for margin of safety</text>
+  
+  <rect x="440" y="160" width="240" height="80" rx="5" ry="5" fill="#fee2e2" />
+  <text x="560" y="180" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#9f1239">DECISION MAKING</text>
+  <text x="460" y="200" font-family="Arial" font-size="12" fill="#334155">• Follows market trends</text>
+  <text x="460" y="220" font-family="Arial" font-size="12" fill="#334155">• Makes decisions based on emotions</text>
+  <text x="460" y="240" font-family="Arial" font-size="12" fill="#334155">• Reacts to news and price movements</text>
+  
+  <!-- Market Decline Response -->
+  <rect x="120" y="250" width="240" height="80" rx="5" ry="5" fill="#f0fdf4" />
+  <text x="240" y="270" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#166534">DURING MARKET DECLINE</text>
+  <text x="140" y="290" font-family="Arial" font-size="12" fill="#334155">• Sees opportunity to buy more</text>
+  <text x="140" y="310" font-family="Arial" font-size="12" fill="#334155">• Increases position at lower prices</text>
+  <text x="140" y="330" font-family="Arial" font-size="12" fill="#334155">• Maintains long-term perspective</text>
+  
+  <rect x="440" y="250" width="240" height="80" rx="5" ry="5" fill="#fef2f2" />
+  <text x="560" y="270" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#9f1239">DURING MARKET DECLINE</text>
+  <text x="460" y="290" font-family="Arial" font-size="12" fill="#334155">• Anxious about paper losses</text>
+  <text x="460" y="310" font-family="Arial" font-size="12" fill="#334155">• Holds, afraid to lock in losses</text>
+  <text x="460" y="330" font-family="Arial" font-size="12" fill="#334155">• May panic-sell at the bottom</text>
+  
+  <!-- Market Recovery Response -->
+  <rect x="120" y="340" width="240" height="80" rx="5" ry="5" fill="#dcfce7" />
+  <text x="240" y="360" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#166534">DURING MARKET RECOVERY</text>
+  <text x="140" y="380" font-family="Arial" font-size="12" fill="#334155">• Stops buying as prices rise</text>
+  <text x="140" y="400" font-family="Arial" font-size="12" fill="#334155">• May sell if prices exceed value</text>
+  <text x="140" y="420" font-family="Arial" font-size="12" fill="#334155">• Focuses on new opportunities</text>
+  
+  <rect x="440" y="340" width="240" height="80" rx="5" ry="5" fill="#fee2e2" />
+  <text x="560" y="360" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#9f1239">DURING MARKET RECOVERY</text>
+  <text x="460" y="380" font-family="Arial" font-size="12" fill="#334155">• Regains confidence as prices rise</text>
+  <text x="460" y="400" font-family="Arial" font-size="12" fill="#334155">• Buys more at higher prices</text>
+  <text x="460" y="420" font-family="Arial" font-size="12" fill="#334155">• FOMO (Fear Of Missing Out) kicks in</text>
+  
+  <!-- Results Comparison -->
+  <rect x="120" y="430" width="240" height="40" rx="5" ry="5" fill="#10b981" />
+  <text x="240" y="455" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#ffffff">BUYS LOW, SELLS HIGH</text>
+  
+  <rect x="440" y="430" width="240" height="40" rx="5" ry="5" fill="#ef4444" />
+  <text x="560" y="455" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#ffffff">BUYS HIGH, SELLS LOW</text>
+  
+  <!-- Example Scenario -->
+  <rect x="230" y="180" width="340" height="30" rx="5" ry="5" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="1" />
+  <text x="400" y="200" font-family="Arial" font-size="12" text-anchor="middle" fill="#0c4a6e">
+    Amy buys more shares during downturns, Trevor buys more during upswings
+  </text>
+  
+  <!-- Scenario Visualization -->
+  <line x1="400" y1="490" x2="400" y2="70" stroke="#64748b" stroke-width="1" stroke-dasharray="5,5" />
+</svg>

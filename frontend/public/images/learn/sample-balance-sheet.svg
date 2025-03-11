@@ -1,0 +1,74 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#334155">Nancy's Ice Cream Stand: Balance Sheet</text>
+  
+  <!-- Balance Sheet Container -->
+  <rect x="100" y="80" width="600" height="320" rx="8" ry="8" fill="#ffffff" stroke="#64748b" stroke-width="1" />
+  
+  <!-- Headers -->
+  <rect x="100" y="80" width="600" height="40" rx="8" ry="0" fill="#f1f5f9" />
+  <text x="175" y="105" font-family="Arial" font-size="16" font-weight="bold" fill="#334155">Account</text>
+  <text x="550" y="105" font-family="Arial" font-size="16" font-weight="bold" fill="#334155">Amount</text>
+  
+  <!-- Assets Section -->
+  <rect x="100" y="120" width="600" height="40" fill="#dbeafe" />
+  <text x="175" y="145" font-family="Arial" font-size="16" font-weight="bold" fill="#1e40af">ASSETS</text>
+  <text x="550" y="145" font-family="Arial" font-size="16" font-weight="bold" fill="#1e40af">$44,000</text>
+  
+  <!-- Asset Items -->
+  <rect x="100" y="160" width="600" height="30" fill="#f8fafc" />
+  <text x="200" y="180" font-family="Arial" font-size="14" fill="#334155">• Cash in business account</text>
+  <text x="550" y="180" font-family="Arial" font-size="14" fill="#334155">$3,000</text>
+  
+  <rect x="100" y="190" width="600" height="30" fill="#f8fafc" />
+  <text x="200" y="210" font-family="Arial" font-size="14" fill="#334155">• Ice cream stand (property)</text>
+  <text x="550" y="210" font-family="Arial" font-size="14" fill="#334155">$10,000</text>
+  
+  <rect x="100" y="220" width="600" height="30" fill="#f8fafc" />
+  <text x="200" y="240" font-family="Arial" font-size="14" fill="#334155">• Ice cream machine</text>
+  <text x="550" y="240" font-family="Arial" font-size="14" fill="#334155">$5,000</text>
+  
+  <rect x="100" y="250" width="600" height="30" fill="#f8fafc" />
+  <text x="200" y="270" font-family="Arial" font-size="14" fill="#334155">• Supplies</text>
+  <text x="550" y="270" font-family="Arial" font-size="14" fill="#334155">$1,000</text>
+  
+  <rect x="100" y="280" width="600" height="30" fill="#f8fafc" />
+  <text x="200" y="300" font-family="Arial" font-size="14" fill="#334155">• Land</text>
+  <text x="550" y="300" font-family="Arial" font-size="14" fill="#334155">$25,000</text>
+  
+  <!-- Liabilities Section -->
+  <rect x="100" y="310" width="600" height="40" fill="#fecdd3" />
+  <text x="175" y="335" font-family="Arial" font-size="16" font-weight="bold" fill="#9f1239">LIABILITIES</text>
+  <text x="550" y="335" font-family="Arial" font-size="16" font-weight="bold" fill="#9f1239">$37,000</text>
+  
+  <!-- Liability Items -->
+  <rect x="100" y="350" width="600" height="30" fill="#f8fafc" />
+  <text x="200" y="370" font-family="Arial" font-size="14" fill="#334155">• Salary owed to employee</text>
+  <text x="550" y="370" font-family="Arial" font-size="14" fill="#334155">$2,000</text>
+  
+  <rect x="100" y="380" width="600" height="30" fill="#f8fafc" />
+  <text x="200" y="400" font-family="Arial" font-size="14" fill="#334155">• Loan on ice cream stand</text>
+  <text x="550" y="400" font-family="Arial" font-size="14" fill="#334155">$9,000</text>
+  
+  <rect x="100" y="410" width="600" height="30" fill="#f8fafc" />
+  <text x="200" y="430" font-family="Arial" font-size="14" fill="#334155">• Loan on ice cream machine</text>
+  <text x="550" y="430" font-family="Arial" font-size="14" fill="#334155">$3,000</text>
+  
+  <rect x="100" y="440" width="600" height="30" fill="#f8fafc" />
+  <text x="200" y="460" font-family="Arial" font-size="14" fill="#334155">• Loan on land</text>
+  <text x="550" y="460" font-family="Arial" font-size="14" fill="#334155">$23,000</text>
+  
+  <!-- Equity Section -->
+  <rect x="100" y="470" width="600" height="40" fill="#bbf7d0" />
+  <text x="175" y="495" font-family="Arial" font-size="16" font-weight="bold" fill="#166534">EQUITY (ASSETS - LIABILITIES)</text>
+  <text x="550" y="495" font-family="Arial" font-size="16" font-weight="bold" fill="#166534">$7,000</text>
+  
+  <!-- Key Insights -->
+  <rect x="150" y="530" width="500" height="80" rx="5" ry="5" fill="#f1f5f9" stroke="#64748b" stroke-width="1" />
+  <text x="400" y="550" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#334155">Key Insights</text>
+  <text x="400" y="575" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">• Nancy only truly owns $7,000 of her $44,000 in assets</text>
+  <text x="400" y="600" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">• If liquidated today, she would walk away with only $7,000</text>
+</svg>

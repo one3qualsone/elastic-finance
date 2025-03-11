@@ -1,0 +1,111 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#334155">The Three Financial Statements</text>
+  
+  <!-- Income Statement -->
+  <rect x="100" y="90" width="180" height="240" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" rx="8" ry="8" />
+  <text x="190" y="120" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#1e40af">INCOME STATEMENT</text>
+  <text x="190" y="140" font-family="Arial" font-size="12" text-anchor="middle" fill="#1e3a8a">(Profit & Loss)</text>
+  
+  <line x1="120" y1="155" x2="260" y2="155" stroke="#93c5fd" stroke-width="2" />
+  
+  <!-- Income Statement Components -->
+  <rect x="120" y="165" width="140" height="25" fill="#bfdbfe" rx="3" ry="3" />
+  <text x="190" y="182" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Revenue</text>
+  
+  <rect x="120" y="195" width="140" height="25" fill="#bfdbfe" rx="3" ry="3" />
+  <text x="190" y="212" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">- Cost of Revenue</text>
+  
+  <rect x="120" y="225" width="140" height="25" fill="#bfdbfe" rx="3" ry="3" />
+  <text x="190" y="242" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#334155">= Gross Profit</text>
+  
+  <rect x="120" y="255" width="140" height="25" fill="#bfdbfe" rx="3" ry="3" />
+  <text x="190" y="272" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">- Operating Expenses</text>
+  
+  <rect x="120" y="285" width="140" height="25" fill="#bfdbfe" rx="3" ry="3" />
+  <text x="190" y="302" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">± Other Income/Expenses</text>
+  
+  <rect x="120" y="315" width="140" height="25" fill="#bfdbfe" rx="3" ry="3" />
+  <text x="190" y="332" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#334155">= Net Income</text>
+  
+  <!-- Income Statement Description -->
+  <text x="190" y="355" font-family="Arial" font-size="11" text-anchor="middle" fill="#1e3a8a">Shows revenue, expenses, and</text>
+  <text x="190" y="370" font-family="Arial" font-size="11" text-anchor="middle" fill="#1e3a8a">profitability over a period of time</text>
+  
+  <!-- Balance Sheet -->
+  <rect x="310" y="90" width="180" height="240" fill="#bbf7d0" stroke="#22c55e" stroke-width="2" rx="8" ry="8" />
+  <text x="400" y="120" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#166534">BALANCE SHEET</text>
+  <text x="400" y="140" font-family="Arial" font-size="12" text-anchor="middle" fill="#166534">(Statement of Financial Position)</text>
+  
+  <line x1="330" y1="155" x2="470" y2="155" stroke="#86efac" stroke-width="2" />
+  
+  <!-- Balance Sheet Components -->
+  <rect x="330" y="165" width="140" height="25" fill="#dcfce7" rx="3" ry="3" />
+  <text x="400" y="182" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#334155">ASSETS</text>
+  
+  <rect x="330" y="195" width="140" height="25" fill="#dcfce7" rx="3" ry="3" />
+  <text x="400" y="212" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Current Assets</text>
+  
+  <rect x="330" y="225" width="140" height="25" fill="#dcfce7" rx="3" ry="3" />
+  <text x="400" y="242" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Non-Current Assets</text>
+  
+  <rect x="330" y="255" width="140" height="25" fill="#dcfce7" rx="3" ry="3" />
+  <text x="400" y="272" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#334155">LIABILITIES</text>
+  
+  <rect x="330" y="285" width="140" height="25" fill="#dcfce7" rx="3" ry="3" />
+  <text x="400" y="302" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Current Liabilities</text>
+  
+  <rect x="330" y="315" width="140" height="25" fill="#dcfce7" rx="3" ry="3" />
+  <text x="400" y="332" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Non-Current Liabilities</text>
+  
+  <rect x="330" y="345" width="140" height="25" fill="#dcfce7" rx="3" ry="3" />
+  <text x="400" y="362" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#334155">EQUITY</text>
+  
+  <!-- Cash Flow Statement -->
+  <rect x="520" y="90" width="180" height="240" fill="#fecdd3" stroke="#f43f5e" stroke-width="2" rx="8" ry="8" />
+  <text x="610" y="120" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#9f1239">CASH FLOW STATEMENT</text>
+  
+  <line x1="540" y1="155" x2="680" y2="155" stroke="#fda4af" stroke-width="2" />
+  
+  <!-- Cash Flow Statement Components -->
+  <rect x="540" y="165" width="140" height="25" fill="#fee2e2" rx="3" ry="3" />
+  <text x="610" y="182" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Net Income</text>
+  
+  <rect x="540" y="195" width="140" height="25" fill="#fee2e2" rx="3" ry="3" />
+  <text x="610" y="212" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">+ Non-Cash Adjustments</text>
+  
+  <rect x="540" y="225" width="140" height="25" fill="#fee2e2" rx="3" ry="3" />
+  <text x="610" y="242" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#334155">Operating Cash Flow</text>
+  
+  <rect x="540" y="255" width="140" height="25" fill="#fee2e2" rx="3" ry="3" />
+  <text x="610" y="272" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Investing Cash Flow</text>
+  
+  <rect x="540" y="285" width="140" height="25" fill="#fee2e2" rx="3" ry="3" />
+  <text x="610" y="302" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Financing Cash Flow</text>
+  
+  <rect x="540" y="315" width="140" height="25" fill="#fee2e2" rx="3" ry="3" />
+  <text x="610" y="332" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#334155">Net Change in Cash</text>
+  
+  <!-- Cash Flow Statement Description -->
+  <text x="610" y="355" font-family="Arial" font-size="11" text-anchor="middle" fill="#9f1239">Shows actual cash movements</text>
+  <text x="610" y="370" font-family="Arial" font-size="11" text-anchor="middle" fill="#9f1239">into and out of the business</text>
+  
+  <!-- Connecting Flow -->
+  <path d="M190,390 C190,410 400,410 400,390" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="4,2" />
+  <path d="M610,390 C610,410 400,410 400,390" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="4,2" />
+  
+  <text x="400" y="430" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#334155">Interconnected Financial Story</text>
+  
+  <!-- Key Financial Ratios -->
+  <rect x="100" y="450" width="180" height="40" rx="5" ry="5" fill="#dbeafe" />
+  <text x="190" y="475" font-family="Arial" font-size="14" text-anchor="middle" fill="#1e3a8a">Profitability Ratios</text>
+  
+  <rect x="310" y="450" width="180" height="40" rx="5" ry="5" fill="#bbf7d0" />
+  <text x="400" y="475" font-family="Arial" font-size="14" text-anchor="middle" fill="#166534">Solvency Ratios</text>
+  
+  <rect x="520" y="450" width="180" height="40" rx="5" ry="5" fill="#fecdd3" />
+  <text x="610" y="475" font-family="Arial" font-size="14" text-anchor="middle" fill="#9f1239">Efficiency Ratios</text>
+</svg>

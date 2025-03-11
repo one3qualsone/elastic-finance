@@ -1,0 +1,74 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#334155">Benjamin Graham's "Mr. Market"</text>
+  
+  <!-- Mr. Market - Split personality -->
+  <circle cx="400" cy="180" r="80" fill="#f1f5f9" stroke="#64748b" stroke-width="2" />
+  
+  <!-- Face - Split personality -->
+  <path d="M400,180 A40,40 0 0,0 360,220 A40,40 0 0,0 400,180 Z" fill="#fecdd3" />
+  <path d="M400,180 A40,40 0 0,1 440,220 A40,40 0 0,1 400,180 Z" fill="#bbf7d0" />
+  
+  <!-- Eyes -->
+  <circle cx="380" cy="170" r="8" fill="#334155" />
+  <circle cx="420" cy="170" r="8" fill="#334155" />
+  
+  <!-- Different mouths for different moods -->
+  <path d="M375,190 Q390,205 400,190" stroke="#ef4444" stroke-width="3" fill="none" />
+  <path d="M400,190 Q410,175 425,190" stroke="#22c55e" stroke-width="3" fill="none" />
+  
+  <!-- Emotion Indicators -->
+  <text x="325" y="210" font-family="Arial" font-size="12" font-weight="bold" fill="#ef4444">FEAR</text>
+  <text x="465" y="210" font-family="Arial" font-size="12" font-weight="bold" fill="#22c55e">GREED</text>
+  
+  <!-- Bear Market Side -->
+  <rect x="100" y="120" width="200" height="220" rx="8" ry="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2" />
+  <text x="200" y="145" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#b91c1c">PESSIMISTIC MR. MARKET</text>
+  <text x="200" y="170" font-family="Arial" font-size="14" text-anchor="middle" fill="#ef4444">"Everything is terrible!"</text>
+  
+  <rect x="120" y="180" width="160" height="40" rx="5" ry="5" fill="#fee2e2" />
+  <text x="200" y="205" font-family="Arial" font-size="14" text-anchor="middle" fill="#7f1d1d">Market Price: $40</text>
+  
+  <rect x="120" y="230" width="160" height="40" rx="5" ry="5" fill="#ffffff" />
+  <text x="200" y="255" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Intrinsic Value: $100</text>
+  
+  <rect x="120" y="280" width="160" height="40" rx="5" ry="5" fill="#dcfce7" />
+  <text x="200" y="305" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#166534">BUY OPPORTUNITY</text>
+  
+  <!-- Bull Market Side -->
+  <rect x="500" y="120" width="200" height="220" rx="8" ry="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2" />
+  <text x="600" y="145" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#166534">OPTIMISTIC MR. MARKET</text>
+  <text x="600" y="170" font-family="Arial" font-size="14" text-anchor="middle" fill="#22c55e">"Prices will only go up!"</text>
+  
+  <rect x="520" y="180" width="160" height="40" rx="5" ry="5" fill="#dcfce7" />
+  <text x="600" y="205" font-family="Arial" font-size="14" text-anchor="middle" fill="#166534">Market Price: $180</text>
+  
+  <rect x="520" y="230" width="160" height="40" rx="5" ry="5" fill="#ffffff" />
+  <text x="600" y="255" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Intrinsic Value: $100</text>
+  
+  <rect x="520" y="280" width="160" height="40" rx="5" ry="5" fill="#fee2e2" />
+  <text x="600" y="305" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#b91c1c">SELL OPPORTUNITY</text>
+  
+  <!-- Connections to Mr. Market -->
+  <path d="M300,200 C320,180 340,180 360,180" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="5,3" />
+  <path d="M440,180 C460,180 480,180 500,200" fill="none" stroke="#22c55e" stroke-width="2" stroke-dasharray="5,3" />
+  
+  <!-- Value Investor Response -->
+  <rect x="150" y="370" width="500" height="110" rx="8" ry="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1" />
+  <text x="400" y="395" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#334155">The Value Investor's Response</text>
+  
+  <text x="400" y="425" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic" fill="#334155">
+    "Mr. Market is there to serve you, not to guide you."
+  </text>
+  
+  <text x="400" y="455" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">
+    Focus on intrinsic value, not Mr. Market's daily mood swings
+  </text>
+  
+  <text x="400" y="475" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">
+    Buy when Mr. Market is fearful, sell when he's greedy
+  </text>
+</svg>

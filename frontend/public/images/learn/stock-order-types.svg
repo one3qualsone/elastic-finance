@@ -1,0 +1,69 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#334155">Stock Order Types</text>
+  
+  <!-- Stock Price Chart -->
+  <rect x="100" y="100" width="600" height="250" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+  
+  <!-- Stock Price Line -->
+  <path d="M100,250 L150,240 L200,245 L250,230 L300,200 L350,210 L400,180 L450,160 L500,200 L550,240 L600,230 L650,235 L700,250" 
+        fill="none" stroke="#3b82f6" stroke-width="2" />
+  
+  <!-- Order Type Boxes -->
+  <!-- Market Order -->
+  <rect x="100" y="370" width="180" height="100" rx="8" ry="8" fill="#bbf7d0" stroke="#22c55e" stroke-width="2" />
+  <text x="190" y="395" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#166534">MARKET ORDER</text>
+  
+  <rect x="120" y="410" width="140" height="50" rx="5" ry="5" fill="#dcfce7" />
+  <text x="190" y="430" font-family="Arial" font-size="12" text-anchor="middle" fill="#166534">Execute at current price</text>
+  <text x="190" y="450" font-family="Arial" font-size="12" text-anchor="middle" fill="#166534">regardless of level</text>
+  
+  <!-- Buy Market Order Example -->
+  <circle cx="450" cy="160" r="8" fill="#22c55e" />
+  <text x="450" y="140" font-family="Arial" font-size="12" fill="#166534">Buy at $160</text>
+  <path d="M190,370 C250,300 300,200 450,160" fill="none" stroke="#22c55e" stroke-width="1" stroke-dasharray="3,2" />
+  
+  <!-- Limit Order -->
+  <rect x="310" y="370" width="180" height="100" rx="8" ry="8" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2" />
+  <text x="400" y="395" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#1e40af">LIMIT ORDER</text>
+  
+  <rect x="330" y="410" width="140" height="50" rx="5" ry="5" fill="#dbeafe" />
+  <text x="400" y="430" font-family="Arial" font-size="12" text-anchor="middle" fill="#1e40af">Only execute at specified</text>
+  <text x="400" y="450" font-family="Arial" font-size="12" text-anchor="middle" fill="#1e40af">price or better</text>
+  
+  <!-- Buy Limit Example -->
+  <line x1="100" y1="200" x2="700" y2="200" stroke="#3b82f6" stroke-width="1" stroke-dasharray="5,3" />
+  <text x="120" y="190" font-family="Arial" font-size="12" fill="#1e40af">Buy Limit: $200</text>
+  <circle cx="300" cy="200" r="8" fill="#3b82f6" />
+  <path d="M400,370 C380,300 340,250 300,200" fill="none" stroke="#3b82f6" stroke-width="1" stroke-dasharray="3,2" />
+  
+  <!-- Stop Order -->
+  <rect x="520" y="370" width="180" height="100" rx="8" ry="8" fill="#fecdd3" stroke="#f43f5e" stroke-width="2" />
+  <text x="610" y="395" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#9f1239">STOP ORDER</text>
+  
+  <rect x="540" y="410" width="140" height="50" rx="5" ry="5" fill="#fee2e2" />
+  <text x="610" y="430" font-family="Arial" font-size="12" text-anchor="middle" fill="#9f1239">Triggers at threshold, then</text>
+  <text x="610" y="450" font-family="Arial" font-size="12" text-anchor="middle" fill="#9f1239">becomes a market order</text>
+  
+  <!-- Stop Order Example -->
+  <line x1="100" y1="230" x2="700" y2="230" stroke="#f43f5e" stroke-width="1" stroke-dasharray="5,3" />
+  <text x="120" y="220" font-family="Arial" font-size="12" fill="#9f1239">Stop: $230</text>
+  <circle cx="550" cy="230" r="8" fill="#f43f5e" />
+  <path d="M610,370 C590,320 570,270 550,230" fill="none" stroke="#f43f5e" stroke-width="1" stroke-dasharray="3,2" />
+  
+  <!-- Time Indicators -->
+  <text x="100" y="270" font-family="Arial" font-size="12" fill="#64748b">9:30 AM</text>
+  <text x="690" y="270" font-family="Arial" font-size="12" text-anchor="end" fill="#64748b">4:00 PM</text>
+  <text x="400" y="270" font-family="Arial" font-size="12" text-anchor="middle" fill="#64748b">Trading Day</text>
+  
+  <!-- Price Labels -->
+  <text x="80" y="110" font-family="Arial" font-size="12" text-anchor="end" fill="#64748b">$170</text>
+  <text x="80" y="160" font-family="Arial" font-size="12" text-anchor="end" fill="#64748b">$160</text>
+  <text x="80" y="200" font-family="Arial" font-size="12" text-anchor="end" fill="#64748b">$150</text>
+  <text x="80" y="250" font-family="Arial" font-size="12" text-anchor="end" fill="#64748b">$140</text>
+  <text x="80" y="300" font-family="Arial" font-size="12" text-anchor="end" fill="#64748b">$130</text>
+  <text x="80" y="350" font-family="Arial" font-size="12" text-anchor="end" fill="#64748b">$120</text>
+</svg>

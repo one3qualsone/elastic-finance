@@ -1,0 +1,74 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#334155">The Interest Rate Effect</text>
+  <text x="400" y="70" font-family="Arial" font-size="16" text-anchor="middle" fill="#64748b">How Rates Influence Spending Decisions and Asset Prices</text>
+  
+  <!-- High Rate Scenario -->
+  <rect x="100" y="100" width="280" height="280" rx="8" ry="8" fill="#fecdd3" stroke="#f43f5e" stroke-width="2" />
+  <text x="240" y="130" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#9f1239">HIGH INTEREST RATE: 15%</text>
+  
+  <!-- Car Purchase Example -->
+  <rect x="120" y="150" width="240" height="130" fill="#fee2e2" rx="5" ry="5" />
+  <text x="240" y="170" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#9f1239">Car Purchase Example</text>
+  <text x="140" y="195" font-family="Arial" font-size="12" fill="#334155">• Car price: $30,000</text>
+  <text x="140" y="215" font-family="Arial" font-size="12" fill="#334155">• Down payment: $5,000</text>
+  <text x="140" y="235" font-family="Arial" font-size="12" fill="#334155">• Amount financed: $25,000</text>
+  <text x="140" y="255" font-family="Arial" font-size="12" fill="#334155">• Monthly payment: $594</text>
+  <text x="140" y="275" font-family="Arial" font-size="12" font-weight="bold" fill="#9f1239">• Total interest paid: $10,685</text>
+  
+  <!-- Decision Box -->
+  <rect x="120" y="290" width="240" height="70" fill="#fee2e2" rx="5" ry="5" />
+  <text x="240" y="315" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#9f1239">DECISION: DON'T BUY</text>
+  <text x="240" y="340" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Total cost ($35,685) exceeds budget</text>
+  <text x="240" y="355" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Can't justify the high interest expense</text>
+  
+  <!-- Low Rate Scenario -->
+  <rect x="420" y="100" width="280" height="280" rx="8" ry="8" fill="#bbf7d0" stroke="#22c55e" stroke-width="2" />
+  <text x="560" y="130" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#166534">LOW INTEREST RATE: 1%</text>
+  
+  <!-- Car Purchase Example -->
+  <rect x="440" y="150" width="240" height="130" fill="#dcfce7" rx="5" ry="5" />
+  <text x="560" y="170" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#166534">Car Purchase Example</text>
+  <text x="460" y="195" font-family="Arial" font-size="12" fill="#334155">• Car price: $30,000</text>
+  <text x="460" y="215" font-family="Arial" font-size="12" fill="#334155">• Down payment: $5,000</text>
+  <text x="460" y="235" font-family="Arial" font-size="12" fill="#334155">• Amount financed: $25,000</text>
+  <text x="460" y="255" font-family="Arial" font-size="12" fill="#334155">• Monthly payment: $427</text>
+  <text x="460" y="275" font-family="Arial" font-size="12" font-weight="bold" fill="#166534">• Total interest paid: $641</text>
+  
+  <!-- Decision Box -->
+  <rect x="440" y="290" width="240" height="70" fill="#dcfce7" rx="5" ry="5" />
+  <text x="560" y="315" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#166534">DECISION: BUY</text>
+  <text x="560" y="340" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Total cost ($30,641) within budget</text>
+  <text x="560" y="355" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Low interest expense makes it affordable</text>
+  
+  <!-- Bottom Economy Impact Box -->
+  <rect x="100" y="400" width="600" height="80" rx="8" ry="8" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="2" />
+  <text x="400" y="425" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#0c4a6e">ECONOMIC IMPACT OF INTEREST RATES</text>
+  
+  <line x1="400" y1="440" x2="400" y2="470" stroke="#64748b" stroke-width="2" />
+  
+  <!-- Left Side - High Rate Impact -->
+  <text x="200" y="455" font-family="Arial" font-size="14" text-anchor="middle" fill="#9f1239">High Rates → Reduced Spending</text>
+  <text x="200" y="475" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Economic slowdown, inflation decreases</text>
+  
+  <!-- Right Side - Low Rate Impact -->
+  <text x="600" y="455" font-family="Arial" font-size="14" text-anchor="middle" fill="#166534">Low Rates → Increased Spending</text>
+  <text x="600" y="475" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Economic growth, potential inflation</text>
+  
+  <!-- Connecting Arrows -->
+  <path d="M240,380 L240,400" fill="none" stroke="#9f1239" stroke-width="2" marker-end="url(#redArrow)" />
+  <path d="M560,380 L560,400" fill="none" stroke="#166534" stroke-width="2" marker-end="url(#greenArrow)" />
+  
+  <!-- Arrows definition -->
+  <defs>
+    <marker id="redArrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#9f1239" />
+    </marker>
+    <marker id="greenArrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#166534" />
+    </marker>
+  </defs>
+</svg>

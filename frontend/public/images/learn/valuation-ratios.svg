@@ -1,0 +1,59 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#334155">Key Valuation Ratios</text>
+  
+  <!-- P/E Ratio Section -->
+  <rect x="100" y="100" width="280" height="300" fill="#dbeafe" rx="10" ry="10" stroke="#3b82f6" stroke-width="2" />
+  <text x="240" y="130" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold" fill="#1e40af">Price-to-Earnings (P/E) Ratio</text>
+  
+  <!-- P/E Formula -->
+  <rect x="130" y="150" width="220" height="60" fill="#f8fafc" rx="5" ry="5" />
+  <text x="240" y="170" font-family="Arial" font-size="16" text-anchor="middle" fill="#334155">P/E Ratio =</text>
+  <line x1="180" y1="190" x2="300" y2="190" stroke="#334155" stroke-width="1" />
+  <text x="240" y="185" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Market Price Per Share</text>
+  <text x="240" y="205" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Earnings Per Share (EPS)</text>
+  
+  <!-- P/E Example -->
+  <rect x="130" y="220" width="220" height="80" fill="#f8fafc" rx="5" ry="5" />
+  <text x="240" y="240" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Example:</text>
+  <text x="240" y="260" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">$50 share price ÷ $2.50 EPS = 20</text>
+  <text x="240" y="280" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">P/E Ratio of 20</text>
+  
+  <!-- P/E Interpretation -->
+  <rect x="130" y="310" width="220" height="80" fill="#f8fafc" rx="5" ry="5" />
+  <text x="240" y="330" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#334155">Buffett's Rule of Thumb</text>
+  <text x="240" y="350" font-family="Arial" font-size="13" text-anchor="middle" fill="#334155">• Less than 15: Potentially undervalued</text>
+  <text x="240" y="370" font-family="Arial" font-size="13" text-anchor="middle" fill="#334155">• More than 25: Potentially overvalued</text>
+  
+  <!-- P/B Ratio Section -->
+  <rect x="420" y="100" width="280" height="300" fill="#bbf7d0" rx="10" ry="10" stroke="#22c55e" stroke-width="2" />
+  <text x="560" y="130" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold" fill="#166534">Price-to-Book (P/B) Ratio</text>
+  
+  <!-- P/B Formula -->
+  <rect x="450" y="150" width="220" height="60" fill="#f8fafc" rx="5" ry="5" />
+  <text x="560" y="170" font-family="Arial" font-size="16" text-anchor="middle" fill="#334155">P/B Ratio =</text>
+  <line x1="500" y1="190" x2="620" y2="190" stroke="#334155" stroke-width="1" />
+  <text x="560" y="185" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Market Price Per Share</text>
+  <text x="560" y="205" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Book Value Per Share</text>
+  
+  <!-- P/B Example -->
+  <rect x="450" y="220" width="220" height="80" fill="#f8fafc" rx="5" ry="5" />
+  <text x="560" y="240" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Example:</text>
+  <text x="560" y="260" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">$50 share price ÷ $25 book value = 2</text>
+  <text x="560" y="280" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">P/B Ratio of 2</text>
+  
+  <!-- P/B Interpretation -->
+  <rect x="450" y="310" width="220" height="80" fill="#f8fafc" rx="5" ry="5" />
+  <text x="560" y="330" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#334155">Buffett's Rule of Thumb</text>
+  <text x="560" y="350" font-family="Arial" font-size="13" text-anchor="middle" fill="#334155">• Less than 1.5: Potentially undervalued</text>
+  <text x="560" y="370" font-family="Arial" font-size="13" text-anchor="middle" fill="#334155">• More than 3: Potentially overvalued</text>
+  
+  <!-- Combined Ratio Box -->
+  <rect x="100" y="410" width="600" height="70" fill="#f1f5f9" rx="8" ry="8" stroke="#64748b" stroke-width="1" />
+  <text x="400" y="430" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#334155">Graham's Combined Ratio</text>
+  <text x="400" y="455" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">P/E Ratio × P/B Ratio = Combined Ratio (Target: below 22.5)</text>
+  <text x="400" y="475" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Example: 15 × 1.5 = 22.5 (Maximum acceptable value)</text>
+</svg>

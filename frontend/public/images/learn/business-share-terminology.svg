@@ -1,0 +1,69 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#334155">Business vs. Share Terminology</text>
+  
+  <!-- Main Comparison Table -->
+  <rect x="100" y="90" width="600" height="340" fill="#ffffff" stroke="#64748b" stroke-width="1" rx="8" ry="8" />
+  
+  <!-- Header -->
+  <rect x="100" y="90" width="600" height="60" fill="#f1f5f9" stroke="#64748b" stroke-width="1" rx="8" ry="8" />
+  <text x="250" y="125" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#334155">WHOLE BUSINESS</text>
+  <text x="550" y="125" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#334155">PER SHARE</text>
+  <line x1="400" y1="90" x2="400" y2="430" stroke="#64748b" stroke-width="1" />
+  
+  <!-- Description Row -->
+  <rect x="100" y="150" width="600" height="40" fill="#ffffff" stroke="#64748b" stroke-width="1" />
+  <text x="130" y="175" font-family="Arial" font-size="14" font-weight="bold" fill="#334155">Description:</text>
+  <text x="250" y="175" font-family="Arial" font-size="14" fill="#334155">The entire company</text>
+  <text x="550" y="175" font-family="Arial" font-size="14" fill="#334155">A fractional ownership unit</text>
+  
+  <!-- Market Value Row -->
+  <rect x="100" y="190" width="600" height="40" fill="#f8fafc" stroke="#64748b" stroke-width="1" />
+  <text x="130" y="215" font-family="Arial" font-size="14" font-weight="bold" fill="#334155">Market Value:</text>
+  <text x="250" y="215" font-family="Arial" font-size="14" fill="#334155">Market Capitalization</text>
+  <text x="550" y="215" font-family="Arial" font-size="14" fill="#334155">Stock Price</text>
+  
+  <!-- Earnings Row -->
+  <rect x="100" y="230" width="600" height="40" fill="#ffffff" stroke="#64748b" stroke-width="1" />
+  <text x="130" y="255" font-family="Arial" font-size="14" font-weight="bold" fill="#334155">Earnings:</text>
+  <text x="250" y="255" font-family="Arial" font-size="14" fill="#334155">Net Income</text>
+  <text x="550" y="255" font-family="Arial" font-size="14" fill="#334155">Earnings Per Share (EPS)</text>
+  
+  <!-- Assets Row -->
+  <rect x="100" y="270" width="600" height="40" fill="#f8fafc" stroke="#64748b" stroke-width="1" />
+  <text x="130" y="295" font-family="Arial" font-size="14" font-weight="bold" fill="#334155">Assets:</text>
+  <text x="250" y="295" font-family="Arial" font-size="14" fill="#334155">Total Assets</text>
+  <text x="550" y="295" font-family="Arial" font-size="14" fill="#334155">Assets Per Share</text>
+  
+  <!-- Liabilities Row -->
+  <rect x="100" y="310" width="600" height="40" fill="#ffffff" stroke="#64748b" stroke-width="1" />
+  <text x="130" y="335" font-family="Arial" font-size="14" font-weight="bold" fill="#334155">Liabilities:</text>
+  <text x="250" y="335" font-family="Arial" font-size="14" fill="#334155">Total Liabilities</text>
+  <text x="550" y="335" font-family="Arial" font-size="14" fill="#334155">Liabilities Per Share</text>
+  
+  <!-- Equity Row -->
+  <rect x="100" y="350" width="600" height="40" fill="#f8fafc" stroke="#64748b" stroke-width="1" />
+  <text x="130" y="375" font-family="Arial" font-size="14" font-weight="bold" fill="#334155">Equity:</text>
+  <text x="250" y="375" font-family="Arial" font-size="14" fill="#334155">Shareholders' Equity</text>
+  <text x="550" y="375" font-family="Arial" font-size="14" fill="#334155">Book Value Per Share</text>
+  
+  <!-- Distribution Row -->
+  <rect x="100" y="390" width="600" height="40" fill="#ffffff" stroke="#64748b" stroke-width="1" />
+  <text x="130" y="415" font-family="Arial" font-size="14" font-weight="bold" fill="#334155">Distribution:</text>
+  <text x="250" y="415" font-family="Arial" font-size="14" fill="#334155">Total Dividends Paid</text>
+  <text x="550" y="415" font-family="Arial" font-size="14" fill="#334155">Dividend Per Share (DPS)</text>
+  
+  <!-- Formula Box -->
+  <rect x="150" y="450" width="500" height="30" rx="5" ry="5" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="1" />
+  <text x="400" y="470" font-family="Arial" font-size="14" text-anchor="middle" fill="#0c4a6e">
+    Per Share Value = Whole Business Value ÷ Number of Shares Outstanding
+  </text>
+  
+  <!-- Example: Coca-Cola Reference -->
+  <rect x="100" y="450" width="25" height="25" fill="#f44336" rx="5" ry="5" />
+  <text x="118" y="467" font-family="Arial" font-size="12" fill="#ffffff" font-weight="bold">e.g.</text>
+  <text x="140" y="470" font-family="Arial" font-size="12" fill="#334155">Coca-Cola:</text>
+</svg>

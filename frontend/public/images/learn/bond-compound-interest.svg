@@ -1,0 +1,75 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#334155">Bond Compound Interest</text>
+  
+  <!-- Timeline Bar -->
+  <line x1="100" y1="200" x2="700" y2="200" stroke="#64748b" stroke-width="3" />
+  
+  <!-- Initial Investment -->
+  <line x1="150" y1="190" x2="150" y2="210" stroke="#64748b" stroke-width="2" />
+  <text x="150" y="230" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Year 0</text>
+  <rect x="120" y="240" width="60" height="40" fill="#bfdbfe" rx="5" ry="5" stroke="#3b82f6" stroke-width="1" />
+  <text x="150" y="265" font-family="Arial" font-size="14" text-anchor="middle" fill="#1e40af">$1,000</text>
+  <text x="150" y="290" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Initial Investment</text>
+  
+  <!-- Year 1 Payment -->
+  <line x1="250" y1="190" x2="250" y2="210" stroke="#64748b" stroke-width="2" />
+  <text x="250" y="230" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Year 1</text>
+  <rect x="220" y="140" width="60" height="40" fill="#bbf7d0" rx="5" ry="5" stroke="#22c55e" stroke-width="1" />
+  <text x="250" y="165" font-family="Arial" font-size="14" text-anchor="middle" fill="#166534">$50</text>
+  <text x="250" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Reinvested at 5%</text>
+  
+  <!-- Year 2 Payment -->
+  <line x1="350" y1="190" x2="350" y2="210" stroke="#64748b" stroke-width="2" />
+  <text x="350" y="230" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Year 2</text>
+  <rect x="320" y="140" width="60" height="40" fill="#bbf7d0" rx="5" ry="5" stroke="#22c55e" stroke-width="1" />
+  <text x="350" y="165" font-family="Arial" font-size="14" text-anchor="middle" fill="#166534">$52.50</text>
+  <text x="350" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Reinvested at 5%</text>
+  
+  <!-- Year 3 Payment -->
+  <line x1="450" y1="190" x2="450" y2="210" stroke="#64748b" stroke-width="2" />
+  <text x="450" y="230" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Year 3</text>
+  <rect x="420" y="140" width="60" height="40" fill="#bbf7d0" rx="5" ry="5" stroke="#22c55e" stroke-width="1" />
+  <text x="450" y="165" font-family="Arial" font-size="14" text-anchor="middle" fill="#166534">$55.13</text>
+  <text x="450" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Reinvested at 5%</text>
+  
+  <!-- Year 4 Payment -->
+  <line x1="550" y1="190" x2="550" y2="210" stroke="#64748b" stroke-width="2" />
+  <text x="550" y="230" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Year 4</text>
+  <rect x="520" y="140" width="60" height="40" fill="#bbf7d0" rx="5" ry="5" stroke="#22c55e" stroke-width="1" />
+  <text x="550" y="165" font-family="Arial" font-size="14" text-anchor="middle" fill="#166534">$57.88</text>
+  <text x="550" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Reinvested at 5%</text>
+  
+  <!-- Year 5 Maturity -->
+  <line x1="650" y1="190" x2="650" y2="210" stroke="#64748b" stroke-width="2" />
+  <text x="650" y="230" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Year 5</text>
+  <rect x="620" y="140" width="60" height="40" fill="#bbf7d0" rx="5" ry="5" stroke="#22c55e" stroke-width="1" />
+  <text x="650" y="165" font-family="Arial" font-size="14" text-anchor="middle" fill="#166534">$60.78</text>
+  <rect x="620" y="240" width="60" height="40" fill="#bfdbfe" rx="5" ry="5" stroke="#3b82f6" stroke-width="1" />
+  <text x="650" y="265" font-family="Arial" font-size="14" text-anchor="middle" fill="#1e40af">$1,000</text>
+  <text x="650" y="300" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Principal Returned</text>
+  <text x="650" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Final Coupon</text>
+  
+  <!-- Accumulated Interest Visualization -->
+  <path d="M250,140 L350,137 L450,134 L550,131 L650,128" fill="none" stroke="#16a34a" stroke-width="2" />
+  <path d="M250,165 L350,160 L450,155 L550,148 L650,140" fill="none" stroke="#16a34a" stroke-width="2" />
+  
+  <!-- Calculation Box -->
+  <rect x="100" y="350" width="600" height="120" rx="8" ry="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1" />
+  <text x="400" y="380" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#334155">Compound Interest Calculation</text>
+  
+  <text x="150" y="410" font-family="Arial" font-size="14" fill="#334155">• $1,000 bond with 5% coupon rate for 5 years</text>
+  <text x="150" y="435" font-family="Arial" font-size="14" fill="#334155">• Each coupon payment is reinvested at 5%</text>
+  <text x="150" y="460" font-family="Arial" font-size="14" fill="#334155">• Compound interest formula: A = P(1+r)ᵗ applied to each payment</text>
+  
+  <text x="530" y="435" font-family="Arial" font-size="14" text-anchor="end" fill="#334155">Total Return:</text>
+  <text x="550" y="435" font-family="Arial" font-size="16" font-weight="bold" fill="#166534">$1,276.29</text>
+  <text x="550" y="455" font-family="Arial" font-size="12" fill="#334155">($1,000 principal + $276.29 interest)</text>
+  
+  <!-- Key Insight -->
+  <rect x="200" y="310" width="400" height="30" rx="5" ry="5" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="1" />
+  <text x="400" y="330" font-family="Arial" font-size="14" text-anchor="middle" fill="#0c4a6e">Compound interest yields $26.29 more than simple interest</text>
+</svg>

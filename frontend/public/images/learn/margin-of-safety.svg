@@ -1,0 +1,59 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#334155">Margin of Safety Concept</text>
+  
+  <!-- Main diagram - bridge with weight analogy -->
+  <rect x="100" y="230" width="600" height="20" fill="#94a3b8" /> <!-- Bridge base -->
+  
+  <!-- Left pillar -->
+  <rect x="140" y="250" width="40" height="100" fill="#475569" />
+  <rect x="130" y="350" width="60" height="20" fill="#475569" />
+  
+  <!-- Right pillar -->
+  <rect x="620" y="250" width="40" height="100" fill="#475569" />
+  <rect x="610" y="350" width="60" height="20" fill="#475569" />
+  
+  <!-- Bridge capacity label -->
+  <text x="400" y="200" font-family="Arial" font-size="16" text-anchor="middle" fill="#334155">Bridge Capacity: 10 Tons</text>
+  
+  <!-- Truck on bridge -->
+  <rect x="300" y="180" width="120" height="50" rx="10" ry="10" fill="#3b82f6" />
+  <rect x="320" y="205" width="30" height="25" fill="#1e40af" />
+  <rect x="420" y="205" width="30" height="25" fill="#1e40af" />
+  <circle cx="335" cy="230" r="15" fill="#1e3a8a" />
+  <circle cx="435" cy="230" r="15" fill="#1e3a8a" />
+  
+  <!-- Truck weight label -->
+  <text x="360" y="155" font-family="Arial" font-size="14" text-anchor="middle" fill="#1e40af">Truck Weight: 6 Tons</text>
+  
+  <!-- Margin of safety zone -->
+  <rect x="100" y="270" width="600" height="40" fill="#34d399" fill-opacity="0.3" />
+  <text x="400" y="295" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#047857">MARGIN OF SAFETY: 4 TONS</text>
+  
+  <!-- Explanation sections -->
+  <rect x="100" y="390" width="280" height="90" rx="8" ry="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" />
+  <text x="240" y="415" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#1e40af">Investment Concept</text>
+  <text x="240" y="440" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Only buy when market price is</text>
+  <text x="240" y="460" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">significantly below intrinsic value</text>
+  
+  <rect x="420" y="390" width="280" height="90" rx="8" ry="8" fill="#bbf7d0" stroke="#22c55e" stroke-width="2" />
+  <text x="560" y="415" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#166534">Value Investing Principle</text>
+  <text x="560" y="440" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">"Having a margin of safety is the</text>
+  <text x="560" y="460" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">central concept of investment." - Graham</text>
+  
+  <!-- Relationship to stock prices -->
+  <rect x="140" y="90" width="520" height="80" rx="8" ry="8" fill="#f1f5f9" stroke="#64748b" stroke-width="1" />
+  <text x="400" y="115" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#334155">Margin of Safety in Stock Valuation</text>
+  
+  <line x1="230" y1="140" x2="430" y2="140" stroke="#64748b" stroke-width="2" stroke-dasharray="4,2" />
+  <text x="230" y="135" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Intrinsic Value: $100</text>
+  
+  <line x1="230" y1="155" x2="330" y2="155" stroke="#22c55e" stroke-width="2" />
+  <text x="330" y="155" font-family="Arial" font-size="12" text-anchor="end" fill="#166534">Buy Price: $70</text>
+  
+  <path d="M230,140 L430,140 L430,160 L330,160 L330,150 L230,150 Z" fill="#34d399" fill-opacity="0.3" />
+  <text x="480" y="150" font-family="Arial" font-size="12" fill="#047857">30% Margin of Safety</text>
+</svg>

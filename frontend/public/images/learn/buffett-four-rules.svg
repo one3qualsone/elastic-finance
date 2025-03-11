@@ -1,0 +1,61 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#334155">Warren Buffett's Four Rules for Buying Stocks</text>
+  
+  <!-- Rule 1 -->
+  <rect x="100" y="90" width="280" height="150" rx="8" ry="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" />
+  <text x="240" y="120" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#1e40af">RULE 1</text>
+  <text x="240" y="150" font-family="Arial" font-size="16" text-anchor="middle" fill="#1e3a8a">The Stock Must Be Stable</text>
+  <text x="240" y="175" font-family="Arial" font-size="16" text-anchor="middle" fill="#1e3a8a">and Understandable</text>
+  <line x1="140" y1="185" x2="340" y2="185" stroke="#93c5fd" stroke-width="2" />
+  <text x="240" y="215" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Avoid businesses with complex models</text>
+  <text x="240" y="235" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">or unpredictable earnings</text>
+  
+  <!-- Rule 2 -->
+  <rect x="420" y="90" width="280" height="150" rx="8" ry="8" fill="#bbf7d0" stroke="#22c55e" stroke-width="2" />
+  <text x="560" y="120" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#166534">RULE 2</text>
+  <text x="560" y="150" font-family="Arial" font-size="16" text-anchor="middle" fill="#166534">The Stock Must Have</text>
+  <text x="560" y="175" font-family="Arial" font-size="16" text-anchor="middle" fill="#166534">Long-Term Prospects</text>
+  <line x1="460" y1="185" x2="660" y2="185" stroke="#86efac" stroke-width="2" />
+  <text x="560" y="215" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Seek companies that will be relevant</text>
+  <text x="560" y="235" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">and profitable decades from now</text>
+  
+  <!-- Rule 3 -->
+  <rect x="100" y="270" width="280" height="150" rx="8" ry="8" fill="#fee2e2" stroke="#ef4444" stroke-width="2" />
+  <text x="240" y="300" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#b91c1c">RULE 3</text>
+  <text x="240" y="330" font-family="Arial" font-size="16" text-anchor="middle" fill="#b91c1c">The Stock Must Be Managed</text>
+  <text x="240" y="355" font-family="Arial" font-size="16" text-anchor="middle" fill="#b91c1c">by Vigilant Leaders</text>
+  <line x1="140" y1="365" x2="340" y2="365" stroke="#fca5a5" stroke-width="2" />
+  <text x="240" y="395" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Look for management that acts like owners</text>
+  <text x="240" y="415" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">and allocates capital efficiently</text>
+  
+  <!-- Rule 4 -->
+  <rect x="420" y="270" width="280" height="150" rx="8" ry="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" />
+  <text x="560" y="300" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#b45309">RULE 4</text>
+  <text x="560" y="330" font-family="Arial" font-size="16" text-anchor="middle" fill="#b45309">The Stock Must Be</text>
+  <text x="560" y="355" font-family="Arial" font-size="16" text-anchor="middle" fill="#b45309">Undervalued</text>
+  <line x1="460" y1="365" x2="660" y2="365" stroke="#fcd34d" stroke-width="2" />
+  <text x="560" y="395" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">Buy at a significant discount to</text>
+  <text x="560" y="415" font-family="Arial" font-size="12" text-anchor="middle" fill="#334155">intrinsic value (margin of safety)</text>
+  
+  <!-- Center Circle with "ALL FOUR RULES MUST BE SATISFIED" -->
+  <circle cx="400" cy="250" r="50" fill="#f1f5f9" stroke="#64748b" stroke-width="2" />
+  <text x="400" y="235" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="#334155">ALL FOUR</text>
+  <text x="400" y="255" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="#334155">RULES MUST</text>
+  <text x="400" y="275" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="#334155">BE SATISFIED</text>
+  
+  <!-- Connecting lines to center -->
+  <line x1="240" y1="180" x2="365" y2="225" stroke="#64748b" stroke-width="1" stroke-dasharray="4,2" />
+  <line x1="560" y1="180" x2="435" y2="225" stroke="#64748b" stroke-width="1" stroke-dasharray="4,2" />
+  <line x1="240" y1="320" x2="365" y2="275" stroke="#64748b" stroke-width="1" stroke-dasharray="4,2" />
+  <line x1="560" y1="320" x2="435" y2="275" stroke="#64748b" stroke-width="1" stroke-dasharray="4,2" />
+  
+  <!-- Quote at bottom -->
+  <rect x="150" y="440" width="500" height="40" rx="5" ry="5" fill="#f1f5f9" />
+  <text x="400" y="465" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic" fill="#334155">
+    "It's far better to buy a wonderful company at a fair price than a fair company at a wonderful price."
+  </text>
+</svg>

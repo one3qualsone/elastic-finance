@@ -1,0 +1,82 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#334155">How Bonds Work: Money Flow</text>
+  
+  <!-- Real Estate Company -->
+  <rect x="100" y="100" width="180" height="100" rx="8" ry="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" />
+  <text x="190" y="140" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#1e40af">REAL ESTATE COMPANY</text>
+  <text x="190" y="165" font-family="Arial" font-size="14" text-anchor="middle" fill="#1e3a8a">"Real Estate Empires"</text>
+  <text x="190" y="185" font-family="Arial" font-size="12" text-anchor="middle" fill="#1e3a8a">(Jack, CFO)</text>
+  
+  <!-- Bank -->
+  <rect x="310" y="100" width="180" height="100" rx="8" ry="8" fill="#fecdd3" stroke="#f43f5e" stroke-width="2" />
+  <text x="400" y="140" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#9f1239">BANK</text>
+  <text x="400" y="165" font-family="Arial" font-size="14" text-anchor="middle" fill="#9f1239">Underwriter</text>
+  <text x="400" y="185" font-family="Arial" font-size="12" text-anchor="middle" fill="#9f1239">(Creates bonds, sells to investors)</text>
+  
+  <!-- Investors -->
+  <rect x="520" y="100" width="180" height="100" rx="8" ry="8" fill="#bbf7d0" stroke="#22c55e" stroke-width="2" />
+  <text x="610" y="140" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#166534">INVESTORS</text>
+  <text x="610" y="165" font-family="Arial" font-size="14" text-anchor="middle" fill="#166534">Bond Purchasers</text>
+  <text x="610" y="185" font-family="Arial" font-size="12" text-anchor="middle" fill="#166534">(Buy bonds for income)</text>
+  
+  <!-- Building Project -->
+  <rect x="100" y="300" width="180" height="140" rx="8" ry="8" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="2" />
+  <text x="190" y="330" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#0c4a6e">HEADQUARTERS BUILDING</text>
+  <text x="190" y="355" font-family="Arial" font-size="14" text-anchor="middle" fill="#0c4a6e">Project Cost: $500 million</text>
+  
+  <!-- Building Icon -->
+  <rect x="140" y="370" width="100" height="60" fill="#ffffff" stroke="#64748b" stroke-width="1" />
+  <path d="M135,370 L190,340 L245,370" fill="#94a3b8" stroke="#64748b" stroke-width="1" />
+  <rect x="170" y="390" width="40" height="40" fill="#f8fafc" stroke="#64748b" stroke-width="1" />
+  
+  <!-- Money Flow Arrows - Step 1: Bank to Company -->
+  <path d="M310,140 L280,140" fill="none" stroke="#f43f5e" stroke-width="2" marker-end="url(#red-arrow)" />
+  <text x="295" y="130" font-family="Arial" font-size="12" fill="#f43f5e">1. $500M</text>
+  
+  <!-- Company to Building Project -->
+  <path d="M190,200 L190,300" fill="none" stroke="#3b82f6" stroke-width="2" marker-end="url(#blue-arrow)" />
+  <text x="200" y="250" font-family="Arial" font-size="12" fill="#3b82f6">2. Funds Construction</text>
+  
+  <!-- Step 2: Bank to Investors -->
+  <path d="M490,140 L520,140" fill="none" stroke="#f43f5e" stroke-width="2" marker-end="url(#red-arrow)" />
+  <text x="505" y="130" font-family="Arial" font-size="12" fill="#f43f5e">3. Bonds</text>
+  
+  <!-- Step 3: Investors to Bank -->
+  <path d="M520,160 L490,160" fill="none" stroke="#22c55e" stroke-width="2" marker-end="url(#green-arrow)" />
+  <text x="505" y="175" font-family="Arial" font-size="12" fill="#22c55e">4. $505M</text>
+  <text x="505" y="190" font-family="Arial" font-size="10" fill="#22c55e">($5M underwriting fee)</text>
+  
+  <!-- Bond Details Box -->
+  <rect x="350" y="300" width="360" height="140" rx="8" ry="8" fill="#f8fafc" stroke="#64748b" stroke-width="1" />
+  <text x="530" y="330" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#334155">BOND DETAILS</text>
+  
+  <text x="370" y="355" font-family="Arial" font-size="14" fill="#334155">• 500,000 bonds issued at $1,000 par value each</text>
+  <text x="370" y="380" font-family="Arial" font-size="14" fill="#334155">• 5% coupon rate (semi-annual payments)</text>
+  <text x="370" y="405" font-family="Arial" font-size="14" fill="#334155">• 30-year term (matures in 2053)</text>
+  <text x="370" y="430" font-family="Arial" font-size="14" fill="#334155">• Total repayment: $1.25 billion over 30 years</text>
+  
+  <!-- Ongoing Payment Flows -->
+  <rect x="100" y="460" width="600" height="30" rx="5" ry="5" fill="#fef3c7" stroke="#f59e0b" stroke-width="1" />
+  <text x="190" y="480" font-family="Arial" font-size="14" text-anchor="middle" fill="#ca8a04">Semi-Annual Interest: $12.5M</text>
+  <text x="560" y="480" font-family="Arial" font-size="14" text-anchor="middle" fill="#ca8a04">30-Year Maturity: Return $500M Principal</text>
+  
+  <path d="M190,460 L190,440" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3,2" />
+  <path d="M560,460 L560,440" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3,2" />
+  
+  <!-- Define arrow markers -->
+  <defs>
+    <marker id="blue-arrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6" />
+    </marker>
+    <marker id="red-arrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f43f5e" />
+    </marker>
+    <marker id="green-arrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#22c55e" />
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,50 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#334155">Value Investing Concept</text>
+  
+  <!-- Stock Price Line (Market Value) -->
+  <path d="M100,300 C200,280 250,150 300,220 C350,280 400,100 450,120 C500,180 550,220 600,180 C650,140 700,150 750,120" 
+        stroke="#3b82f6" stroke-width="4" fill="none" />
+        
+  <!-- Intrinsic Value Line -->
+  <path d="M100,250 C200,245 300,235 400,225 C500,215 600,205 700,195" 
+        stroke="#10b981" stroke-width="4" fill="none" stroke-dasharray="5,5" />
+  
+  <!-- Buy Zone Overlay -->
+  <path d="M300,220 C350,280 400,100 450,120 L450,350 L300,350 Z" 
+        fill="#10b981" fill-opacity="0.2" />
+  
+  <!-- Vertical Timeline Marker -->
+  <line x1="450" y1="120" x2="450" y2="350" stroke="#64748b" stroke-width="1" stroke-dasharray="4,4" />
+  
+  <!-- Buy Low Annotation -->
+  <circle cx="450" cy="120" r="8" fill="#10b981" />
+  <text x="470" y="110" font-family="Arial" font-size="16" fill="#10b981" font-weight="bold">Buy Low</text>
+  <line x1="450" y1="120" x2="450" y2="225" stroke="#10b981" stroke-width="1" stroke-dasharray="4,4" />
+  <text x="400" y="250" font-family="Arial" font-size="20" text-anchor="middle" fill="#10b981" font-weight="bold">Margin of Safety</text>
+  
+  <!-- Sell High Annotation -->
+  <circle cx="700" cy="150" r="8" fill="#ef4444" />
+  <text x="720" y="140" font-family="Arial" font-size="16" fill="#ef4444" font-weight="bold">Sell High</text>
+  
+  <!-- Labels -->
+  <text x="700" y="170" font-family="Arial" font-size="16" text-anchor="end" fill="#3b82f6">Market Price</text>
+  <text x="700" y="195" font-family="Arial" font-size="16" text-anchor="end" fill="#10b981">Intrinsic Value</text>
+
+  <!-- X-Axis -->
+  <line x1="100" y1="350" x2="750" y2="350" stroke="#64748b" stroke-width="2" />
+  <text x="425" y="380" font-family="Arial" font-size="16" text-anchor="middle" fill="#334155">Time</text>
+  
+  <!-- Y-Axis -->
+  <line x1="100" y1="100" x2="100" y2="350" stroke="#64748b" stroke-width="2" />
+  <text x="60" y="225" font-family="Arial" font-size="16" text-anchor="middle" transform="rotate(-90, 60, 225)" fill="#334155">Price</text>
+  
+  <!-- Key Principles -->
+  <rect x="100" y="400" width="650" height="80" fill="#f1f5f9" rx="5" ry="5" stroke="#cbd5e1" />
+  <text x="120" y="425" font-family="Arial" font-size="16" font-weight="bold" fill="#334155">Key Value Investing Principles:</text>
+  <text x="140" y="455" font-family="Arial" font-size="14" fill="#334155">1. Buy when market price is below intrinsic value (margin of safety)</text>
+  <text x="140" y="475" font-family="Arial" font-size="14" fill="#334155">2. Be patient - markets eventually recognize true value</text>
+</svg>
