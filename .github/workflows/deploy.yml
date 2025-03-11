@@ -17,8 +17,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-          cache: 'npm'
-          cache-dependency-path: 'backend/package-lock.json'
+          # Remove cache dependency path that's causing issues
 
       - name: Install backend dependencies
         run: |
@@ -130,7 +129,6 @@ jobs:
 
   deploy-frontend:
     runs-on: ubuntu-latest
-    needs: deploy-backend
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -139,8 +137,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-          cache: 'npm'
-          cache-dependency-path: 'frontend/package-lock.json'
+          # Remove cache dependency path that's causing issues
 
       - name: Create images directory
         run: |
@@ -154,6 +151,22 @@ jobs:
       - name: Update API URL
         run: |
           echo "NEXT_PUBLIC_API_URL=https://elastic-finance-api.azurewebsites.net/api" > frontend/.env.production
+
+      - name: Update Next.js config
+        run: |
+          # Ensure next.config.js has proper export settings
+          cat > frontend/next.config.js << 'EOF'
+          /** @type {import('next').NextConfig} */
+          const nextConfig = {
+            reactStrictMode: true,
+            swcMinify: true,
+            output: 'export',
+            images: {
+              unoptimized: true
+            }
+          }
+          module.exports = nextConfig
+          EOF
 
       - name: Build frontend
         run: |
