@@ -171,8 +171,10 @@ jobs:
       - name: Build frontend
         run: |
           cd frontend
+          NEXT_EXPORT=true npm run build
           npm run build
-
+        env:
+            NEXT_EXPORT: 'true'
       - name: Deploy frontend to Static Web App
         uses: Azure/static-web-apps-deploy@v1
         with:
