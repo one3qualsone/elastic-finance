@@ -17,12 +17,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-          # Remove cache dependency path that's causing issues
 
       - name: Install backend dependencies
         run: |
           cd backend
-          npm ci
+          npm install  # Changed from npm ci to npm install
 
       - name: Prepare backend for Azure Functions
         run: |
@@ -137,7 +136,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-          # Remove cache dependency path that's causing issues
 
       - name: Create images directory
         run: |
@@ -146,35 +144,19 @@ jobs:
       - name: Install frontend dependencies
         run: |
           cd frontend
-          npm ci
+          npm install  # Changed from npm ci to npm install
 
       - name: Update API URL
         run: |
           echo "NEXT_PUBLIC_API_URL=https://elastic-finance-api.azurewebsites.net/api" > frontend/.env.production
 
-      - name: Update Next.js config
-        run: |
-          # Ensure next.config.js has proper export settings
-          cat > frontend/next.config.js << 'EOF'
-          /** @type {import('next').NextConfig} */
-          const nextConfig = {
-            reactStrictMode: true,
-            swcMinify: true,
-            output: 'export',
-            images: {
-              unoptimized: true
-            }
-          }
-          module.exports = nextConfig
-          EOF
-
       - name: Build frontend
         run: |
           cd frontend
           NEXT_EXPORT=true npm run build
-          npm run build
         env:
-            NEXT_EXPORT: 'true'
+          NEXT_EXPORT: 'true'
+
       - name: Deploy frontend to Static Web App
         uses: Azure/static-web-apps-deploy@v1
         with:
