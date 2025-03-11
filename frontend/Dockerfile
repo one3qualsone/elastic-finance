@@ -12,6 +12,15 @@ RUN npm install
 # Copy configuration files
 COPY jsconfig.json next.config.js postcss.config.js tailwind.config.js ./
 
+# Copy scripts directory (now inside frontend folder)
+COPY scripts ./scripts/
+
+# Create necessary directories for images
+RUN mkdir -p public/images/learn
+
+# Generate placeholder images
+RUN node scripts/setup-images.js
+
 # Copy the rest of the application code
 COPY . .
 

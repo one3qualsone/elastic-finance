@@ -1,12 +1,15 @@
+// frontend/next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  output: 'export', 
   
-  // Configure image domains if needed
+  // Configure image handling
   images: {
     domains: [],
-    unoptimized: true, // This allows local images to load without optimization
+    remotePatterns: [],
+    unoptimized: true,
   },
   
   // Make sure PostCSS plugins are correctly applied

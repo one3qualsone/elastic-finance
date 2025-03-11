@@ -70,12 +70,16 @@ function LearningContent() {
             className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
           >
             <div className="relative h-48 w-full bg-gray-200 dark:bg-gray-700">
+              {/* Use a fallback mechanism for images */}
               {article.imagePath && (
-                <Image
+                <img
                   src={article.imagePath}
                   alt={article.title}
-                  fill
-                  className="object-cover"
+                  className="object-cover w-full h-full"
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = '/images/learn/default.jpg';
+                  }}
                 />
               )}
             </div>

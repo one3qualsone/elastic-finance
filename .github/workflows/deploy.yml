@@ -1,59 +1,171 @@
-# .github/workflows/azure-deploy.yml
 name: Deploy to Azure
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
-  build_and_deploy:
+  deploy-backend:
     runs-on: ubuntu-latest
-    
     steps:
-    - uses: actions/checkout@v3
-    
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
-        cache: 'npm'
-    
-    # Create images directory and placeholders
-    - name: Setup Images
-      run: |
-        mkdir -p ./public/images/learn
-        node scripts/setup-images.js
-    
-    # Login to Azure
-    - name: Azure Login
-      uses: azure/login@v1
-      with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
-    
-    # Deploy Backend to Azure App Service
-    - name: Deploy Backend
-      uses: azure/webapps-deploy@v2
-      with:
-        app-name: ${{ secrets.AZURE_BACKEND_APP_NAME }}
-        package: ./backend
-    
-    # Build Frontend
-    - name: Build Frontend
-      run: |
-        cd frontend
-        npm ci
-        npm run build
-    
-    # Deploy Frontend to Azure Static Web Apps
-    - name: Deploy Frontend
-      uses: azure/static-web-apps-deploy@v1
-      with:
-        azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
-        repo_token: ${{ secrets.GITHUB_TOKEN }}
-        action: "upload"
-        app_location: "frontend"
-        api_location: "" # No API here, as our backend is deployed separately
-        output_location: "out" # Adjust based on your Next.js export output
-      env:
-        NEXT_PUBLIC_API_URL: https://${{ secrets.AZURE_BACKEND_APP_NAME }}.azurewebsites.net/api
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: 'backend/package-lock.json'
+
+      - name: Install backend dependencies
+        run: |
+          cd backend
+          npm ci
+
+      - name: Prepare backend for Azure Functions
+        run: |
+          # Create host.json file
+          echo '{
+            "version": "2.0",
+            "extensionBundle": {
+              "id": "Microsoft.Azure.Functions.ExtensionBundle",
+              "version": "[4.*, 5.0.0)"
+            }
+          }' > backend/host.json
+          
+          # Create function.json for HTTP trigger
+          mkdir -p backend/api
+          echo '{
+            "bindings": [
+              {
+                "authLevel": "anonymous",
+                "type": "httpTrigger",
+                "direction": "in",
+                "name": "req",
+                "methods": ["get", "post"],
+                "route": "{*path}"
+              },
+              {
+                "type": "http",
+                "direction": "out",
+                "name": "res"
+              }
+            ]
+          }' > backend/api/function.json
+          
+          # Create function entry point
+          echo 'const app = require("../src/index");
+          
+          module.exports = async function (context, req) {
+            context.log("HTTP trigger function processed a request.");
+            
+            // Create Express-compatible request/response objects
+            context.req.originalUrl = context.req.url || "/";
+            context.req.path = context.req.params.path || "/";
+            
+            // Setup response callback
+            const res = {
+              status: function(status) {
+                context.res = { status };
+                return this;
+              },
+              send: function(body) {
+                if (!context.res) context.res = {};
+                context.res.body = body;
+                return this;
+              },
+              json: function(body) {
+                if (!context.res) context.res = {};
+                context.res.headers = { "Content-Type": "application/json" };
+                context.res.body = body;
+                return this;
+              },
+              set: function(key, value) {
+                if (!context.res) context.res = {};
+                if (!context.res.headers) context.res.headers = {};
+                context.res.headers[key] = value;
+                return this;
+              },
+              end: function() {
+                return this;
+              }
+            };
+            
+            // Handle the request with Express app
+            try {
+              await new Promise((resolve, reject) => {
+                app._router.handle(context.req, res, (err) => {
+                  if (err) reject(err);
+                  else resolve();
+                });
+              });
+            } catch (error) {
+              context.log.error("Error processing request:", error);
+              context.res = {
+                status: 500,
+                body: "Internal Server Error"
+              };
+            }
+          };' > backend/api/index.js
+
+      - name: Export Express app
+        run: |
+          # Add module export to index.js
+          echo "// Export the Express app for Azure Functions" >> backend/src/index.js
+          echo "module.exports = app;" >> backend/src/index.js
+
+      - name: Login to Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Deploy backend to Azure Functions
+        uses: azure/functions-action@v1
+        with:
+          app-name: 'elastic-finance-api'
+          package: 'backend'
+
+  deploy-frontend:
+    runs-on: ubuntu-latest
+    needs: deploy-backend
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: 'frontend/package-lock.json'
+
+      - name: Create images directory
+        run: |
+          mkdir -p frontend/public/images/learn
+
+      - name: Install frontend dependencies
+        run: |
+          cd frontend
+          npm ci
+
+      - name: Update API URL
+        run: |
+          echo "NEXT_PUBLIC_API_URL=https://elastic-finance-api.azurewebsites.net/api" > frontend/.env.production
+
+      - name: Build frontend
+        run: |
+          cd frontend
+          npm run build
+
+      - name: Deploy frontend to Static Web App
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APP_DEPLOYMENT_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: "upload"
+          app_location: "frontend"
+          output_location: "out"
+          skip_app_build: true
