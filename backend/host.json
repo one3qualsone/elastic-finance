@@ -9,7 +9,7 @@
         "routePrefix": "",
         "cors": {
           "allowedOrigins": [
-            "https://elasticfinancestorage.z13.web.core.windows.net",
+            "https://elasticfinancestorage.z6.web.core.windows.net",
             "http://localhost:3000"
           ],
           "allowedMethods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],

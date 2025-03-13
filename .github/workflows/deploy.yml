@@ -135,8 +135,8 @@ jobs:
         uses: azure/CLI@v1
         with:
           inlineScript: |
-            az functionapp restart --name elastic-finance-api --resource-group your-resource-group-name
-            
+            az functionapp restart --name elastic-finance-api --resource-group elastic-finance
+
   deploy-frontend:
     runs-on: ubuntu-latest
     needs: deploy-backend
