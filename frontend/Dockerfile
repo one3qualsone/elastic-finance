@@ -9,10 +9,13 @@ COPY package.json package-lock.json* ./
 # Install dependencies
 RUN npm install
 
+# Install serve for static file serving
+RUN npm install -g serve
+
 # Copy configuration files
 COPY jsconfig.json next.config.js postcss.config.js tailwind.config.js ./
 
-# Copy scripts directory (now inside frontend folder)
+# Copy scripts directory
 COPY scripts ./scripts/
 
 # Create necessary directories for images
@@ -30,5 +33,5 @@ RUN npm run build
 # Expose port
 EXPOSE 3000
 
-# Use a more reliable way to run Next.js
-CMD ["node_modules/.bin/next", "start"]
+# Use serve to serve static files instead of next start
+CMD ["serve", "-s", "out", "-p", "3000"]

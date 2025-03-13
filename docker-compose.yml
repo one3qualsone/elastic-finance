@@ -16,7 +16,6 @@ services:
       - elastic-finance-network
     depends_on:
       - backend
-    # Removed the volume mount for node_modules that could cause conflicts
 
   backend:
     build:

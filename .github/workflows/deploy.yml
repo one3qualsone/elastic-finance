@@ -21,7 +21,7 @@ jobs:
       - name: Install backend dependencies
         run: |
           cd backend
-          npm install  # Changed from npm ci to npm install
+          npm install
 
       - name: Prepare backend for Azure Functions
         run: |
@@ -114,6 +114,11 @@ jobs:
           # Add module export to index.js
           echo "// Export the Express app for Azure Functions" >> backend/src/index.js
           echo "module.exports = app;" >> backend/src/index.js
+          
+      # Create .env file with OpenAI API key
+      - name: Create env file
+        run: |
+          echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" > backend/.env
 
       - name: Login to Azure
         uses: azure/login@v1
@@ -126,8 +131,16 @@ jobs:
           app-name: 'elastic-finance-api'
           package: 'backend'
 
+      # Add app settings including OpenAI API Key
+      - name: Configure Function App Settings
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az functionapp config appsettings set --name elastic-finance-api --resource-group elastic-finance-rg --settings "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" "CORS_ORIGIN=https://elastic-finance.azurestaticapps.net"
+
   deploy-frontend:
     runs-on: ubuntu-latest
+    needs: deploy-backend
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -141,10 +154,40 @@ jobs:
         run: |
           mkdir -p frontend/public/images/learn
 
+      - name: Generate placeholder images
+        run: |
+          cd frontend
+          node scripts/setup-images.js
+
+      - name: Update next.config.js for static export
+        run: |
+          cat > frontend/next.config.js << 'EOL'
+          /** @type {import('next').NextConfig} */
+          const nextConfig = {
+            reactStrictMode: true,
+            swcMinify: true,
+            
+            // Set output to 'export' for static site generation
+            output: 'export',
+            
+            // Configure image handling
+            images: {
+              unoptimized: true,
+            },
+            
+            // Make sure PostCSS plugins are correctly applied
+            webpack: (config) => {
+              return config;
+            },
+          }
+          
+          module.exports = nextConfig
+          EOL
+
       - name: Install frontend dependencies
         run: |
           cd frontend
-          npm install  # Changed from npm ci to npm install
+          npm install
 
       - name: Update API URL
         run: |
@@ -153,16 +196,25 @@ jobs:
       - name: Build frontend
         run: |
           cd frontend
-          NEXT_EXPORT=true npm run build
-        env:
-          NEXT_EXPORT: 'true'
+          npm run build
+
+      # Copy the output files to a deployment directory
+      - name: Prepare deployment artifacts
+        run: |
+          cp -r frontend/out/* frontend/
+          ls -la frontend/
 
       - name: Deploy frontend to Static Web App
+        id: deploy-swa
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APP_DEPLOYMENT_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           app_location: "frontend"
-          output_location: "out"
           skip_app_build: true
+          
+      # Output deployment URL for reference
+      - name: Output deployment URL
+        run: |
+          echo "Application deployed to: https://elastic-finance.azurestaticapps.net"
