@@ -1,6 +1,6 @@
 # Bond Valuation & Yield to Maturity
 
-Understanding how to properly value bonds is essential for making informed investment decisions. While bonds may seem straightforward, calculating their true return involves more nuance than many investors realize. Let's explore the different methods for valuing bonds and why yield to maturity is the most comprehensive measure.
+Understanding how to properly value bonds is essential for making informed investment decisions. While bonds may seem straightforward, calculating their true return involves more nuance than many investors realise. Let's explore the different methods for valuing bonds and why yield to maturity is the most comprehensive measure.
 
 ## Simple Interest vs. Compound Interest
 
@@ -83,7 +83,7 @@ YTM represents the total return you can expect if you hold the bond until maturi
 
 ## Calculating Yield to Maturity
 
-Let's analyze a bond with 15 years remaining until maturity and a 5% coupon rate, examining three different purchase prices:
+Let's analyse a bond with 15 years remaining until maturity and a 5% coupon rate, examining three different purchase prices:
 
 **Scenario 1: Bond priced at premium ($1,200)**
 - Coupon payments (compounded): $1,098
@@ -134,7 +134,7 @@ Understanding bond valuation and yield to maturity has several practical applica
 
 ### 1. Comparing Different Bonds
 
-YTM provides a standardized way to compare bonds with:
+YTM provides a standardised way to compare bonds with:
 - Different coupon rates
 - Different maturities
 - Different prices relative to par

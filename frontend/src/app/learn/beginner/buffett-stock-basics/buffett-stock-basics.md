@@ -22,7 +22,7 @@ Buffett looks for businesses that will still be relevant and profitable decades 
 - Does the company have a sustainable competitive advantage?
 - Is the industry likely to exist in its current form over the long term?
 
-This long-term perspective allows him to benefit from compounding returns and minimize transaction costs and taxes.
+This long-term perspective allows him to benefit from compounding returns and minimise transaction costs and taxes.
 
 ### 3. The Stock Must Be Managed by Vigilant Leaders
 
@@ -113,6 +113,6 @@ While few investors will match Buffett's extraordinary success, his principles c
 3. **Focus on value, not price movements**
 4. **Be patient** - good investments are rare
 5. **Think independently** - especially when market sentiment is extreme
-6. **Prioritize quality businesses** over mediocre ones selling at slightly better prices
+6. **Prioritise quality businesses** over mediocre ones selling at slightly better prices
 
-By applying these fundamental principles with discipline and patience, investors can improve their odds of achieving satisfactory long-term results while minimizing the risk of permanent capital loss.
+By applying these fundamental principles with discipline and patience, investors can improve their odds of achieving satisfactory long-term results while minimising the risk of permanent capital loss.

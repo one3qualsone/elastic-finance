@@ -1,6 +1,6 @@
 # Reading Financial Statements
 
-Financial statements provide the foundation for analyzing any company's true value. Warren Buffett spends hours poring over these documents before making investment decisions, and for good reason—they contain the hard data about a company's financial health, profitability, and efficiency. Learning to read and interpret these statements is an essential skill for any serious investor.
+Financial statements provide the foundation for analysing any company's true value. Warren Buffett spends hours poring over these documents before making investment decisions, and for good reason—they contain the hard data about a company's financial health, profitability, and efficiency. Learning to read and interpret these statements is an essential skill for any serious investor.
 
 ## The Three Key Financial Statements
 
@@ -35,7 +35,7 @@ Also called the profit and loss statement (P&L), the income statement shows a co
 
 ![Income Statement Structure](/images/learn/income-statement-structure.svg)
 
-### How to Analyze the Income Statement
+### How to Analyse the Income Statement
 
 When reviewing an income statement, focus on:
 
@@ -92,7 +92,7 @@ It follows the fundamental accounting equation:
 
 ![Balance Sheet Structure](/images/learn/balance-sheet-structure.svg)
 
-### How to Analyze the Balance Sheet
+### How to Analyse the Balance Sheet
 
 When reviewing a balance sheet, focus on:
 
@@ -114,7 +114,7 @@ The cash flow statement reconciles net income with actual cash changes and is di
 
 1. **Operating Activities**: Cash generated from core business operations
    - Net income (starting point)
-   - Adjustments for non-cash items (depreciation, amortization)
+   - Adjustments for non-cash items (depreciation, amortisation)
    - Changes in working capital (receivables, inventory, payables)
 
 2. **Investing Activities**: Cash used for long-term asset investment
@@ -129,7 +129,7 @@ The cash flow statement reconciles net income with actual cash changes and is di
 
 ![Cash Flow Statement Structure](/images/learn/cash-flow-structure.svg)
 
-### How to Analyze the Cash Flow Statement
+### How to Analyse the Cash Flow Statement
 
 When reviewing a cash flow statement, focus on:
 
@@ -211,7 +211,7 @@ Experienced investors watch for warning signs in financial statements:
 
 5. **Compare to Industry Peers**: Understand how the company performs relative to competitors
 
-6. **Use Online Financial Databases**: Services like Yahoo Finance, Morningstar, or SEC EDGAR provide standardized financial data
+6. **Use Online Financial Databases**: Services like Yahoo Finance, Morningstar, or SEC EDGAR provide standardised financial data
 
 7. **Start Simple, Then Go Deeper**: Begin with basic metrics before diving into complex analyses
 

@@ -1,6 +1,6 @@
 # What is Value Investing?
 
-Value investing is an investment philosophy that focuses on purchasing assets for less than their intrinsic value. Made famous by legends like Benjamin Graham and Warren Buffett, this approach emphasizes patient, long-term thinking over short-term speculation.
+Value investing is an investment philosophy that focuses on purchasing assets for less than their intrinsic value. Made famous by legends like Benjamin Graham and Warren Buffett, this approach emphasises patient, long-term thinking over short-term speculation.
 
 ## Value Investing vs. Value Trading
 
@@ -21,7 +21,7 @@ Understanding the difference between assets and liabilities is fundamental to va
 - **Assets**: Put money into your pocket (income-producing rental property, dividend-paying stocks, etc.)
 - **Liabilities**: Take money out of your pocket (consumer debt, depreciating goods, etc.)
 
-Wealthy people focus on accumulating assets while minimizing liabilities. Poor people often do the opposite, acquiring liabilities while holding few income-producing assets beyond their job.
+Wealthy people focus on accumulating assets while minimising liabilities. Poor people often do the opposite, acquiring liabilities while holding few income-producing assets beyond their job.
 
 ![Assets vs Liabilities](/images/learn/assets-vs-liabilities.svg)
 
@@ -29,7 +29,7 @@ Wealthy people focus on accumulating assets while minimizing liabilities. Poor p
 
 When Warren Buffett practices value investing, he follows this process:
 
-1. **Analyze Intrinsic Value**: He examines a company's financial data to determine what he thinks it's actually worth (e.g., $40 per share)
+1. **Analyse Intrinsic Value**: He examines a company's financial data to determine what he thinks it's actually worth (e.g., $40 per share)
 2. **Compare to Market Price**: Only after valuing the company does he look at its market price (e.g., $30 per share)
 3. **Buy at a Discount**: If the market price is significantly below his calculated intrinsic value, he purchases the stock
 4. **Hold for Income**: While owning the company, he receives income through dividends or increasing value
@@ -70,13 +70,13 @@ Understanding the difference between assets and liabilities is fundamental to va
 - **Assets**: Put money into your pocket (income-producing rental property, dividend-paying stocks, etc.)
 - **Liabilities**: Take money out of your pocket (consumer debt, depreciating goods, etc.)
 
-Wealthy people focus on accumulating assets while minimizing liabilities. Poor people often do the opposite, acquiring liabilities while holding few income-producing assets beyond their job.
+Wealthy people focus on accumulating assets while minimising liabilities. Poor people often do the opposite, acquiring liabilities while holding few income-producing assets beyond their job.
 
 ## The Warren Buffett Approach
 
 When Warren Buffett practices value investing, he follows this process:
 
-1. **Analyze Intrinsic Value**: He examines a company's financial data to determine what he thinks it's actually worth (e.g., $40 per share)
+1. **Analyse Intrinsic Value**: He examines a company's financial data to determine what he thinks it's actually worth (e.g., $40 per share)
 2. **Compare to Market Price**: Only after valuing the company does he look at its market price (e.g., $30 per share)
 3. **Buy at a Discount**: If the market price is significantly below his calculated intrinsic value, he purchases the stock
 4. **Hold for Income**: While owning the company, he receives income through dividends or increasing value

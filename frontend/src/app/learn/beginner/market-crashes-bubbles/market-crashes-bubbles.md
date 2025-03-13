@@ -57,9 +57,9 @@ Warren Buffett has famously articulated his approach to market cycles:
 
 > "Be fearful when others are greedy, and greedy when others are fearful."
 
-This contrarian philosophy isn't about being difficult—it's about recognizing when prices have diverged significantly from underlying values due to collective psychology.
+This contrarian philosophy isn't about being difficult—it's about recognising when prices have diverged significantly from underlying values due to collective psychology.
 
-Buffett recognizes that the market's emotional cycles create opportunities:
+Buffett recognises that the market's emotional cycles create opportunities:
 
 - When greed dominates, assets become overpriced
 - When fear dominates, assets become underpriced
@@ -98,15 +98,15 @@ Let's see how these approaches play out with a hypothetical stock:
 
 2. **Market Decline**: The stock drops to $15/share
    - Trevor: Nervous but holds his 100 shares
-   - Amy: Analyzes the company, confirms it's still worth $20-22/share, and invests another $2,000 to buy 133 more shares (now owns 233 shares)
+   - Amy: Analyses the company, confirms it's still worth $20-22/share, and invests another $2,000 to buy 133 more shares (now owns 233 shares)
 
 3. **Continued Weakness**: Stock remains at $15 for months
    - Trevor: Growing increasingly worried, but still holding
-   - Amy: Continues to analyze the company, finds it's now worth $21/share due to improved earnings, invests another $2,000 for 133 more shares (now owns 366 shares)
+   - Amy: Continues to analyse the company, finds it's now worth $21/share due to improved earnings, invests another $2,000 for 133 more shares (now owns 366 shares)
 
 4. **Recovery**: Stock price rises to $24/share
    - Trevor: Relieved and excited, buys more shares at the higher price
-   - Amy: Realizes the stock is now overvalued, stops buying but holds existing shares
+   - Amy: Realises the stock is now overvalued, stops buying but holds existing shares
 
 ### The Results
 

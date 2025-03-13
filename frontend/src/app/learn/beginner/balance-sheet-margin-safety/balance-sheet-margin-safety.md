@@ -69,7 +69,7 @@ Book value is simply the equity divided by the number of outstanding shares.
 
 ## The Margin of Safety Concept
 
-Benjamin Graham, Warren Buffett's mentor, emphasized the importance of margin of safety in investing. This principle compares a company's market price to its equity (or book value).
+Benjamin Graham, Warren Buffett's mentor, emphasised the importance of margin of safety in investing. This principle compares a company's market price to its equity (or book value).
 
 In our example:
 - Nancy's business generates $20,000 in annual net income

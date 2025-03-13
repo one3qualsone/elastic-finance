@@ -1,4 +1,4 @@
-// frontend/src/app/learn/page.jsx (modified)
+// frontend/src/app/learn/page.jsx
 'use client';
 
 import { useState, useEffect, Suspense } from 'react';
@@ -112,6 +112,39 @@ function LearningContent() {
 
   return (
     <>
+      {/* Preston Pysh Attribution Box */}
+      <div className="mb-10 p-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-100 dark:border-blue-800">
+        <div className="flex flex-col md:flex-row items-center gap-4">
+          <div className="flex-shrink-0">
+            <a href="https://www.youtube.com/@PrestonPysh" target="_blank" rel="noopener noreferrer">
+              <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-blue-500">
+                <img 
+                  src="/images/learn/preston.jpg" 
+                  alt="Preston Pysh" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </a>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold mb-2">Content Acknowledgment</h3>
+            <p className="text-gray-700 dark:text-gray-300">
+              The educational content in this section has been adapted from the teachings of 
+              <a 
+                href="https://www.youtube.com/@PrestonPysh" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-600 dark:text-blue-400 font-medium mx-1 hover:underline"
+              >
+                Preston Pysh
+              </a>
+              , whose exceptional value investing tutorials have been foundational to this resource.
+              We highly recommend visiting his YouTube channel for more in-depth financial education.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Tab Navigation */}
       <div className="flex justify-center mb-12">
         <div className="inline-flex rounded-md shadow-sm">
@@ -151,24 +184,78 @@ function LearningContent() {
       {/* Content Area */}
       {renderContent()}
       
-      {/* Resources Section */}
+      {/* Resources Section with Added Links */}
       <div className="mt-16 pt-10 border-t border-gray-200 dark:border-gray-700">
         <h2 className="text-2xl font-bold mb-6">Additional Resources</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
             <h3 className="text-lg font-semibold mb-3">Value Investing Books</h3>
-            <ul className="space-y-2">
-              <li>The Intelligent Investor - Benjamin Graham</li>
-              <li>Security Analysis - Benjamin Graham & David Dodd</li>
-              <li>The Essays of Warren Buffett - Warren Buffett</li>
+            <ul className="space-y-3">
+              <li>
+                <a 
+                  href="https://www.amazon.com/Intelligent-Investor-Definitive-Investing-Essentials/dp/0060555661" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  The Intelligent Investor - Benjamin Graham
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://www.amazon.com/Security-Analysis-Principles-Benjamin-Graham/dp/0071592539" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  Security Analysis - Benjamin Graham & David Dodd
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://www.amazon.com/Essays-Warren-Buffett-Lessons-Corporate/dp/1531017509" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  The Essays of Warren Buffett - Warren Buffett
+                </a>
+              </li>
             </ul>
           </div>
           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
             <h3 className="text-lg font-semibold mb-3">Useful Tools</h3>
-            <ul className="space-y-2">
-              <li>Stock Screeners</li>
-              <li>Financial Statement Analyzers</li>
-              <li>Valuation Calculators</li>
+            <ul className="space-y-3">
+              <li>
+                <a 
+                  href="https://finviz.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  Finviz Stock Screener
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://www.sec.gov/edgar/searchedgar/companysearch" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  SEC EDGAR Database
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://www.gurufocus.com/term/dcf/MS/DCF/Morgan+Stanley" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  GuruFocus DCF Calculator
+                </a>
+              </li>
             </ul>
           </div>
           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
@@ -176,9 +263,17 @@ function LearningContent() {
             <p className="text-gray-600 dark:text-gray-400">
               Follow our structured learning path to master value investing from the basics to advanced techniques.
             </p>
-            <a href="/learn?tab=beginner" className="text-blue-600 dark:text-blue-400 hover:underline block mt-2">
-              View Learning Path →
-            </a>
+            <div className="mt-4 space-y-2">
+              <a href="/learn?tab=beginner" className="text-blue-600 dark:text-blue-400 hover:underline block">
+                Beginner Path →
+              </a>
+              <a href="/learn?tab=intermediate" className="text-blue-600 dark:text-blue-400 hover:underline block">
+                Intermediate Path →
+              </a>
+              <a href="/learn?tab=advanced" className="text-blue-600 dark:text-blue-400 hover:underline block">
+                Advanced Path →
+              </a>
+            </div>
           </div>
         </div>
       </div>

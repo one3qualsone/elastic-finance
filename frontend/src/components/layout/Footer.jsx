@@ -30,21 +30,21 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="text-xl font-semibold mb-4">Educational Resources</h3>
+            <h3 className="text-xl font-semibold mb-4">Learning Paths</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/learn/beginner/value-investing-basics" className="text-gray-300 dark:text-gray-400 hover:text-white">
-                  Value Investing Fundamentals
+                <Link href="/learn?tab=beginner" className="text-gray-300 dark:text-gray-400 hover:text-white">
+                  Beginner
                 </Link>
               </li>
               <li>
-                <Link href="/learn/beginner/buffett-stock-basics" className="text-gray-300 dark:text-gray-400 hover:text-white">
-                  Buffett's Investing Principles
+                <Link href="/learn?tab=intermediate" className="text-gray-300 dark:text-gray-400 hover:text-white">
+                  Intermediate
                 </Link>
               </li>
               <li>
-                <Link href="/learn/beginner/intrinsic-value-calculation" className="text-gray-300 dark:text-gray-400 hover:text-white">
-                  Calculating Intrinsic Value
+                <Link href="/learn?tab=advanced" className="text-gray-300 dark:text-gray-400 hover:text-white">
+                  Advanced
                 </Link>
               </li>
             </ul>
@@ -52,7 +52,7 @@ export default function Footer() {
         </div>
         
         <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400 dark:text-gray-500">
-          <p>© {new Date().getFullYear()} Value Investing. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} | Open Source Value Investing Portfolio Project</p>
           <p className="mt-2 text-sm">
             Data provided by Yahoo Finance API. This website is for educational purposes only.
           </p>

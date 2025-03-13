@@ -1,11 +1,12 @@
 // frontend/src/components/cards/EnhancedSearchCard.jsx
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { searchCompany } from '@/lib/api/financeApi';
 
 export default function EnhancedSearchCard({ onSelectStock, isLoading }) {
   const [searchQuery, setSearchQuery] = useState('');
+  const [debouncedSearchQuery, setDebouncedSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
   const [error, setError] = useState('');
   const [isSearching, setIsSearching] = useState(false);
@@ -26,21 +27,28 @@ export default function EnhancedSearchCard({ onSelectStock, isLoading }) {
     };
   }, []);
 
-  // Debounced search function
+  // Debounce search query
   useEffect(() => {
-    const delayDebounceFn = setTimeout(() => {
-      if (searchQuery && searchQuery.length >= 2) {
-        handleSearch();
-      } else {
-        setSearchResults([]);
-      }
+    const timerId = setTimeout(() => {
+      setDebouncedSearchQuery(searchQuery);
     }, 500);
 
-    return () => clearTimeout(delayDebounceFn);
+    return () => {
+      clearTimeout(timerId);
+    };
   }, [searchQuery]);
 
+  // Use debounced search query to fetch results
+  useEffect(() => {
+    if (debouncedSearchQuery && debouncedSearchQuery.length >= 2) {
+      handleSearch();
+    } else {
+      setSearchResults([]);
+    }
+  }, [debouncedSearchQuery]);
+
   const handleSearch = async () => {
-    if (!searchQuery || searchQuery.length < 2) {
+    if (!debouncedSearchQuery || debouncedSearchQuery.length < 2) {
       setError('Please enter at least 2 characters');
       return;
     }
@@ -49,7 +57,7 @@ export default function EnhancedSearchCard({ onSelectStock, isLoading }) {
     setIsSearching(true);
     
     try {
-      const results = await searchCompany(searchQuery);
+      const results = await searchCompany(debouncedSearchQuery);
       setSearchResults(results || []);
       setShowResults(true);
     } catch (err) {

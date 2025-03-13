@@ -27,7 +27,7 @@ This number is crucial for calculating many important investment metrics.
 
 ## Comparing Whole Business vs. One Share Terminology
 
-When analyzing businesses, terminology changes depending on whether you're looking at the entire company or a single share:
+When analysing businesses, terminology changes depending on whether you're looking at the entire company or a single share:
 
 | Whole Business | One Share |
 |----------------|-----------|
@@ -93,7 +93,7 @@ One of the most important insights is that the metrics for one share are directl
 - Earnings Per Share: $2
 - Expected Return: 20% ($2 ÷ $10)
 
-Whether you're buying one share or the entire business, the percentage return remains identical. This is why value investors analyze each share as if they were buying the entire company.
+Whether you're buying one share or the entire business, the percentage return remains identical. This is why value investors analyse each share as if they were buying the entire company.
 
 ## Why is Stock Investing So Lucrative?
 
@@ -111,9 +111,9 @@ Stock investing can be particularly rewarding because:
 
 A value investor's edge comes from:
 
-1. Analyzing businesses based on fundamentals, not emotions
+1. Analysing businesses based on fundamentals, not emotions
 2. Treating each share as a proportional piece of a real business
 3. Understanding that market prices don't always reflect intrinsic value
 4. Having the patience to wait for attractive valuations
 
-By mastering these concepts, you can avoid the common trap of treating stocks as abstract betting chips and instead recognize them for what they truly are: ownership stakes in real businesses with real assets, liabilities, and earnings.
+By mastering these concepts, you can avoid the common trap of treating stocks as abstract betting chips and instead recognise them for what they truly are: ownership stakes in real businesses with real assets, liabilities, and earnings.

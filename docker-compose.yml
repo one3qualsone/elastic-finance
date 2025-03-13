@@ -33,6 +33,9 @@ services:
       - elastic-finance-network
     volumes:
       - ./docs:/app/docs
+    dns:
+      - 8.8.8.8  # Google's DNS
+      - 1.1.1.1  # Cloudflare's DNS
 
 networks:
   elastic-finance-network:

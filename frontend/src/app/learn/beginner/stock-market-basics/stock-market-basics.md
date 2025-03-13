@@ -106,7 +106,7 @@ This means:
 - **Short term**: Stock prices reflect popularity, sentiment, and emotion
 - **Long term**: Stock prices ultimately reflect the underlying business value
 
-Value investors exploit the gap between the voting and weighing functions, buying unpopular but fundamentally sound companies and holding them until the market eventually recognizes their true worth.
+Value investors exploit the gap between the voting and weighing functions, buying unpopular but fundamentally sound companies and holding them until the market eventually recognises their true worth.
 
 ## Practical Implications for Investors
 

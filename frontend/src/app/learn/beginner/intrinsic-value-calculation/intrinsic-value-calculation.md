@@ -125,11 +125,11 @@ For example, if a company is expected to pay a $1 dividend next year, your requi
 
 Warren Buffett prefers to use what he calls "owner earnings" to value a business:
 
-**Owner Earnings = Net Income + Depreciation & Amortization - Capital Expenditures ± Working Capital Changes**
+**Owner Earnings = Net Income + Depreciation & Amortisation - Capital Expenditures ± Working Capital Changes**
 
-He then capitalizes these owner earnings using a rate that reflects long-term Treasury bond rates, plus a risk premium.
+He then capitalises these owner earnings using a rate that reflects long-term Treasury bond rates, plus a risk premium.
 
-**Intrinsic Value = Owner Earnings ÷ Capitalization Rate**
+**Intrinsic Value = Owner Earnings ÷ Capitalisation Rate**
 
 ## Building in a Margin of Safety
 
@@ -209,11 +209,11 @@ While intrinsic value calculation involves quantitative analysis, it also requir
 
 4. **Reinvestment Opportunities**: Can the company deploy capital at attractive returns?
 
-Warren Buffett emphasizes that intrinsic value calculation is not about achieving decimal-point precision but about being "approximately right rather than precisely wrong."
+Warren Buffett emphasises that intrinsic value calculation is not about achieving decimal-point precision but about being "approximately right rather than precisely wrong."
 
 ## Conclusion
 
-Calculating intrinsic value is both an art and a science. It requires financial analysis, business judgment, and an understanding of economic principles. While no valuation method is perfect, the process of thoughtfully analyzing a business's fundamental characteristics provides a solid foundation for investment decisions.
+Calculating intrinsic value is both an art and a science. It requires financial analysis, business judgment, and an understanding of economic principles. While no valuation method is perfect, the process of thoughtfully analysing a business's fundamental characteristics provides a solid foundation for investment decisions.
 
 By focusing on intrinsic value rather than market price, investors can:
 - Make more rational investment decisions

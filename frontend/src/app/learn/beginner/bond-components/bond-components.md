@@ -10,7 +10,7 @@ A typical bond consists of several important components that define its characte
 
 ### 1. Issuer
 
-The issuer is the entity borrowing money by selling the bond. The issuer's name appears at the top of the bond certificate and represents the organization responsible for:
+The issuer is the entity borrowing money by selling the bond. The issuer's name appears at the top of the bond certificate and represents the organisation responsible for:
 - Making timely interest payments
 - Repaying the principal at maturity
 - Honoring all terms of the bond agreement
@@ -98,7 +98,7 @@ Conversely, if interest rates drop to 4% after five years:
 
 ## The Key Relationship
 
-This inverse relationship between interest rates and bond prices can be summarized as:
+This inverse relationship between interest rates and bond prices can be summarised as:
 - **When interest rates go up, bond prices go down**
 - **When interest rates go down, bond prices go up**
 

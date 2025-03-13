@@ -8,7 +8,7 @@ The Federal Reserve is the central banking system of the United States. Created 
 
 Before the Fed's creation, the U.S. had approximately 30,000 different currencies in circulation, issued by various banks, local governments, and other entities. This fragmented system created significant instability, as the value and legitimacy of these currencies varied widely.
 
-The Fed established a unified federal currency (the U.S. dollar) and a centralized mechanism for managing the nation's monetary policy.
+The Fed established a unified federal currency (the U.S. dollar) and a centralised mechanism for managing the nation's monetary policy.
 
 ![Fed Structure](/images/learn/fed-structure.svg)
 
@@ -32,7 +32,7 @@ This unique structure gives the Fed significant independence in setting monetary
 
 The Federal Reserve has four primary responsibilities:
 
-### 1. Maximize Employment and Stabilize Prices
+### 1. Maximise Employment and Stabilise Prices
 The Fed's "dual mandate" is to promote both maximum employment and stable prices (controlling inflation). It seeks to create conditions for sustainable economic growth.
 
 ### 2. Supervise and Regulate Banks
@@ -44,7 +44,7 @@ By monitoring systemic risks and serving as a lender of last resort during finan
 ### 4. Provide Financial Services
 The Fed facilitates the nation's payments systems and serves as the U.S. government's banker, helping manage the country's debt.
 
-For investors, the Fed's role in stabilizing the financial system and setting monetary policy is particularly important to understand.
+For investors, the Fed's role in stabilising the financial system and setting monetary policy is particularly important to understand.
 
 ## How the Fed Changes Market Conditions
 
@@ -146,12 +146,12 @@ Understanding the Fed's role offers several practical benefits for investors:
 
 1. **Contextual Understanding**: Fed policies provide context for current market conditions and investor sentiment
 
-2. **Asset Allocation Decisions**: Interest rate environments help inform whether to emphasize stocks, bonds, or cash
+2. **Asset Allocation Decisions**: Interest rate environments help inform whether to emphasise stocks, bonds, or cash
 
 3. **Contrarian Indicators**: Fed actions often signal when market sentiment has reached extremes, potentially creating investment opportunities
 
 4. **Risk Management**: Awareness of monetary policy helps anticipate potential market shifts and manage portfolio risk accordingly
 
-5. **Long-term Perspective**: Recognizing that Fed policies operate in cycles helps maintain a long-term investment approach rather than reacting to short-term market movements
+5. **Long-term Perspective**: Recognising that Fed policies operate in cycles helps maintain a long-term investment approach rather than reacting to short-term market movements
 
 By understanding the Fed's role and how it influences markets, investors can position themselves more effectively across different market environments and potentially take advantage of the opportunities created by changing monetary policies.

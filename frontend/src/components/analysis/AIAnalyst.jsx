@@ -8,7 +8,11 @@ export default function AIAnalyst({ stockData, newsData, valueAnalysis }) {
   const [isLoading, setIsLoading] = useState(false);
   const [sentimentScore, setSentimentScore] = useState(null);
 
+  // Reset state when stock data changes
   useEffect(() => {
+    setAnalysis('');
+    setSentimentScore(null);
+    
     if (stockData && valueAnalysis) {
       generateAnalysis();
     }

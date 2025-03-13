@@ -1,7 +1,7 @@
 // frontend/src/components/charts/TimeChart.jsx
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { Line } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
@@ -29,11 +29,13 @@ export default function TimeChart({ symbol, data }) {
   const [chartData, setChartData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const chartRef = useRef(null);
 
   useEffect(() => {
-    if (!symbol) {
-      setLoading(false);
-      return;
+    // Cleanup previous chart instance if exists
+    if (chartRef.current && chartRef.current.chartInstance) {
+      chartRef.current.chartInstance.destroy();
+      chartRef.current = null;
     }
     
     setLoading(true);
@@ -133,6 +135,15 @@ export default function TimeChart({ symbol, data }) {
     return mockData;
   };
 
+  // Effect for cleanup when unmounting
+  useEffect(() => {
+    return () => {
+      if (chartRef.current && chartRef.current.chartInstance) {
+        chartRef.current.chartInstance.destroy();
+      }
+    };
+  }, []);
+
   if (loading) {
     return (
       <div className="flex justify-center items-center h-full">
@@ -160,6 +171,7 @@ export default function TimeChart({ symbol, data }) {
   const options = {
     responsive: true,
     maintainAspectRatio: false,
+    devicePixelRatio: 1, // Prevent canvas size issues
     plugins: {
       legend: {
         display: false,
@@ -197,5 +209,13 @@ export default function TimeChart({ symbol, data }) {
     },
   };
 
-  return <Line data={chartData} options={options} />;
+  return (
+    <div style={{ width: '100%', height: '100%', maxHeight: '500px' }}>
+      <Line 
+        ref={chartRef}
+        data={chartData}
+        options={options}
+      />
+    </div>
+  );
 }
