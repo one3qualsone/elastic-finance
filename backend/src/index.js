@@ -5,6 +5,7 @@ const helmet = require('helmet');
 const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
 const config = require('./config');
+const cors = require('cors');
 
 // Import routes
 const financeRoutes = require('./routes/finance');
@@ -12,6 +13,11 @@ const educationalRoutes = require('./routes/educational');
 
 const app = express();
 const PORT = config.port;
+
+app.use(cors({
+  origin: '*', // For testing - will accept any origin
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
+}));
 
 // Middleware
 app.use(helmet()); // Security headers
