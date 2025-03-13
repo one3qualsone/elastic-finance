@@ -23,6 +23,30 @@ jobs:
           cd backend
           npm install
 
+      - name: Create CORS-enabled host.json
+        run: |
+          echo '{
+            "version": "2.0",
+            "extensionBundle": {
+              "id": "Microsoft.Azure.Functions.ExtensionBundle",
+              "version": "[4.*, 5.0.0)"
+            },
+            "extensions": {
+              "http": {
+                "routePrefix": "",
+                "cors": {
+                  "allowedOrigins": [
+                    "https://elasticfinancestorage.z6.web.core.windows.net",
+                    "http://localhost:3000"
+                  ],
+                  "allowedMethods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+                  "allowedHeaders": ["Content-Type", "Authorization"],
+                  "allowCredentials": true
+                }
+              }
+            }
+          }' > backend/host.json
+
       - name: Prepare backend for Azure Functions
         run: |         
           # Create function.json for HTTP trigger
@@ -34,7 +58,7 @@ jobs:
                 "type": "httpTrigger",
                 "direction": "in",
                 "name": "req",
-                "methods": ["get", "post"],
+                "methods": ["get", "post", "put", "delete", "options"],
                 "route": "{*path}"
               },
               {
@@ -45,7 +69,7 @@ jobs:
             ]
           }' > backend/api/function.json
           
-          # Create function entry point
+          # Create function entry point with better CORS handling
           echo 'const app = require("../src/index");
           
           module.exports = async function (context, req) {
@@ -68,7 +92,9 @@ jobs:
               },
               json: function(body) {
                 if (!context.res) context.res = {};
-                context.res.headers = { "Content-Type": "application/json" };
+                context.res.headers = { 
+                  "Content-Type": "application/json"
+                };
                 context.res.body = body;
                 return this;
               },
@@ -83,33 +109,62 @@ jobs:
               }
             };
             
+            // Handle preflight OPTIONS requests
+            if (req.method === "OPTIONS") {
+              context.res = {
+                status: 204,
+                headers: {
+                  "Access-Control-Allow-Origin": "https://elasticfinancestorage.z6.web.core.windows.net",
+                  "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+                  "Access-Control-Allow-Headers": "Content-Type, Authorization",
+                  "Access-Control-Allow-Credentials": "true"
+                }
+              };
+              return;
+            }
+            
             // Handle the request with Express app
             try {
               await new Promise((resolve, reject) => {
                 app._router.handle(context.req, res, (err) => {
-                  if (err) reject(err);
-                  else resolve();
+                  if (err) {
+                    context.log.error("Express error:", err);
+                    reject(err);
+                  } else {
+                    resolve();
+                  }
                 });
               });
+              
+              // Ensure CORS headers are set on successful responses
+              if (!context.res.headers) context.res.headers = {};
+              context.res.headers["Access-Control-Allow-Origin"] = "https://elasticfinancestorage.z6.web.core.windows.net";
+              context.res.headers["Access-Control-Allow-Credentials"] = "true";
+              
             } catch (error) {
               context.log.error("Error processing request:", error);
               context.res = {
                 status: 500,
-                body: "Internal Server Error"
+                headers: {
+                  "Access-Control-Allow-Origin": "https://elasticfinancestorage.z6.web.core.windows.net",
+                  "Access-Control-Allow-Credentials": "true"
+                },
+                body: {
+                  error: "Internal Server Error",
+                  message: error.message
+                }
               };
             }
           };' > backend/api/index.js
 
-      - name: Export Express app
-        run: |
-          # Add module export to index.js
-          echo "// Export the Express app for Azure Functions" >> backend/src/index.js
-          echo "module.exports = app;" >> backend/src/index.js
-          
-      # Create .env file with OpenAI API key
+      # Create corrected .env file without duplicate modules.export
       - name: Create env file
         run: |
-          echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" > backend/.env
+          echo "PORT=4000" > backend/.env
+          echo "NODE_ENV=production" >> backend/.env
+          echo "CACHE_TTL=900" >> backend/.env
+          echo "CORS_ORIGIN=https://elasticfinancestorage.z6.web.core.windows.net" >> backend/.env
+          echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> backend/.env
 
       - name: Login to Azure
         uses: azure/login@v1
