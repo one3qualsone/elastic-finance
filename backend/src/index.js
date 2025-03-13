@@ -19,6 +19,9 @@ app.use(cors({
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
 }));
 
+// Add this before your routes
+app.options('*', cors()); // Enable preflight for all routes
+
 // Middleware
 app.use(helmet()); // Security headers
 app.use(cors({
