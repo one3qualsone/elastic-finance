@@ -24,16 +24,7 @@ jobs:
           npm install
 
       - name: Prepare backend for Azure Functions
-        run: |
-          # Create host.json file
-          echo '{
-            "version": "2.0",
-            "extensionBundle": {
-              "id": "Microsoft.Azure.Functions.ExtensionBundle",
-              "version": "[4.*, 5.0.0)"
-            }
-          }' > backend/host.json
-          
+        run: |         
           # Create function.json for HTTP trigger
           mkdir -p backend/api
           echo '{
