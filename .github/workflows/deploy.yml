@@ -136,7 +136,7 @@ jobs:
         uses: azure/CLI@v1
         with:
           inlineScript: |
-            az functionapp config appsettings set --name elastic-finance-api --resource-group elastic-finance-rg --settings "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" "CORS_ORIGIN=https://elastic-finance.azurestaticapps.net"
+            az functionapp config appsettings set --name elastic-finance-api --resource-group elastic-finance --settings "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" "CORS_ORIGIN=https://elastic-finance.azurestaticapps.net"
 
   deploy-frontend:
     runs-on: ubuntu-latest
@@ -218,3 +218,4 @@ jobs:
       - name: Output deployment URL
         run: |
           echo "Application deployed to: https://elastic-finance.azurestaticapps.net"
+
