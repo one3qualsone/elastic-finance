@@ -11,11 +11,11 @@ const financeRoutes = require('./routes/finance');
 const educationalRoutes = require('./routes/educational');
 
 const app = express();
-const PORT = config.port;
+const PORT = config.port; 
 
 // Define CORS configuration
 const corsOptions = {
-  origin: config.corsOrigin || 'https://elasticfinancestorage.z6.web.core.windows.net',
+  origin: process.env.CORS_ORIGIN || '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
@@ -49,6 +49,25 @@ app.get('/health', (req, res) => {
   res.status(200).json({ status: 'ok' });
 });
 
+app.get('/', (req, res) => {
+  res.status(200).json({ 
+    message: 'Elastic Finance API is running!',
+    environment: config.nodeEnv,
+    corsOrigin: config.corsOrigin
+  });
+});
+
+// Root API endpoint
+app.get('/api', (req, res) => {
+  res.status(200).json({ 
+    message: 'Elastic Finance API endpoints available:',
+    endpoints: [
+      '/api/finance',
+      '/api/educational-content'
+    ]
+  });
+});
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
@@ -62,7 +81,7 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
   console.log(`Environment: ${config.nodeEnv}`);
-  console.log(`CORS origin: ${config.corsOrigin || 'https://elasticfinancestorage.z6.web.core.windows.net'}`);
+  console.log(`CORS origin: ${config.corsOrigin}`);
 });
 
 module.exports = app; 

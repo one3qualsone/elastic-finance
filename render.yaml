@@ -1,0 +1,13 @@
+services:
+     - type: web
+       name: elastic-finance-api
+       env: node
+       buildCommand: cd backend && npm install
+       startCommand: cd backend && node src/index.js
+       envVars:
+         - key: NODE_ENV
+           value: production
+         - key: CORS_ORIGIN
+           value: YOUR_VERCEL_URL_HERE
+         - key: OPENAI_API_KEY
+           sync: false
