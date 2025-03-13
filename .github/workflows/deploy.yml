@@ -135,36 +135,47 @@ jobs:
     runs-on: ubuntu-latest
     needs: deploy-backend
     steps:
-      # Previous steps remain the same...
-      
-      - name: Enable static website hosting
-        uses: azure/CLI@v1
-        with:
-          inlineScript: |
-            az storage blob service-properties update \
-              --account-name elasticfinancestorage \
-              --account-key "${{ secrets.STORAGE_ACCOUNT_KEY }}" \
-              --static-website \
-              --index-document index.html \
-              --404-document index.html
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      - name: Upload to storage account
-        uses: azure/CLI@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          inlineScript: |
-            az storage blob upload-batch \
-              --account-name elasticfinancestorage \
-              --account-key "${{ secrets.STORAGE_ACCOUNT_KEY }}" \
-              --source frontend/out \
-              --destination '$web' \
-              --overwrite true
-              
-      # Optional: output the website URL
-      - name: Output website URL
-        uses: azure/CLI@v1
-        with:
-          inlineScript: |
-            echo "Website URL: $(az storage account show -n elasticfinancestorage --query "primaryEndpoints.web" -o tsv)"
+          node-version: '18'
+
+      - name: Create images directory
+        run: |
+          mkdir -p frontend/public/images/learn
+
+      - name: Generate placeholder images
+        run: |
+          cd frontend
+          node scripts/setup-images.js
+
+      - name: Update next.config.js for static export
+        run: |
+          cat > frontend/next.config.js << 'EOL'
+          /** @type {import('next').NextConfig} */
+          const nextConfig = {
+            reactStrictMode: true,
+            swcMinify: true,
+            
+            // Set output to 'export' for static site generation
+            output: 'export',
+            
+            // Configure image handling
+            images: {
+              unoptimized: true,
+            },
+            
+            // Make sure PostCSS plugins are correctly applied
+            webpack: (config) => {
+              return config;
+            },
+          }
+          
+          module.exports = nextConfig
+          EOL
 
       - name: Install frontend dependencies
         run: |
@@ -180,15 +191,35 @@ jobs:
           cd frontend
           npm run build
 
-      # Upload using Azure CLI with storage account key from secrets
+      - name: Login to Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Enable static website hosting
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az storage blob service-properties update \
+              --account-name elasticfinancestorage \
+              --account-key "${{ secrets.STORAGE_ACCOUNT_KEY }}" \
+              --static-website \
+              --index-document index.html \
+              --404-document 404.html
+
       - name: Upload to storage account
         uses: azure/CLI@v1
         with:
           inlineScript: |
-            # Upload all files from the out directory using a storage account key stored in GitHub secrets
             az storage blob upload-batch \
               --account-name elasticfinancestorage \
               --account-key "${{ secrets.STORAGE_ACCOUNT_KEY }}" \
               --source frontend/out \
               --destination '$web' \
               --overwrite true
+              
+      - name: Output website URL
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            echo "Website URL: $(az storage account show -n elasticfinancestorage --query "primaryEndpoints.web" -o tsv)"
