@@ -5,7 +5,6 @@ const helmet = require('helmet');
 const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
 const config = require('./config');
-const cors = require('cors');
 
 // Import routes
 const financeRoutes = require('./routes/finance');
@@ -14,19 +13,22 @@ const educationalRoutes = require('./routes/educational');
 const app = express();
 const PORT = config.port;
 
-app.use(cors({
-  origin: '*', // For testing - will accept any origin
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
-}));
+// Define CORS configuration
+const corsOptions = {
+  origin: config.corsOrigin || 'https://elasticfinancestorage.z6.web.core.windows.net',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true
+};
 
-// Add this before your routes
-app.options('*', cors()); // Enable preflight for all routes
+// Apply CORS middleware with the defined options
+app.use(cors(corsOptions));
 
-// Middleware
+// Enable preflight requests
+app.options('*', cors(corsOptions));
+
+// Other middleware
 app.use(helmet()); // Security headers
-app.use(cors({
-  origin: config.corsOrigin
-})); // Enable CORS for frontend
 app.use(express.json()); // Parse JSON bodies
 app.use(morgan('dev')); // Logging
 
@@ -60,6 +62,7 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
   console.log(`Environment: ${config.nodeEnv}`);
+  console.log(`CORS origin: ${config.corsOrigin || 'https://elasticfinancestorage.z6.web.core.windows.net'}`);
 });
 
-module.exports = app; // For testing
+module.exports = app; 
