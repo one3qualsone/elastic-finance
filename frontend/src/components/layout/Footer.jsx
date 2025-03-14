@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-4">Value Investing</h3>
             <p className="text-gray-300 dark:text-gray-400">
-              A platform for value investors to analyze stocks based on fundamental principles.
+              A platform for value investors to analyse stocks based on fundamental principles.
             </p>
           </div>
           

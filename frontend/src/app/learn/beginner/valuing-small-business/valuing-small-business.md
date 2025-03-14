@@ -1,6 +1,6 @@
 # Valuing a Small Business
 
-Understanding how to value a business is an essential skill for any investor. By breaking down the components of a business and analyzing how money flows through it, we can determine its true worth.
+Understanding how to value a business is an essential skill for any investor. By breaking down the components of a business and analysing how money flows through it, we can determine its true worth.
 
 ## The Small Business Model
 
@@ -80,7 +80,7 @@ If you overpay for even the best business, your returns will be poor. If you pur
 
 The challenge for any investor is determining the true value of a business and then having the discipline to only purchase when the price is right. This requires:
 
-1. Understanding how to analyze financial statements
+1. Understanding how to analyse financial statements
 2. Calculating a reasonable intrinsic value
 3. Waiting patiently for the right price
 4. Having the courage to act when others are fearful
