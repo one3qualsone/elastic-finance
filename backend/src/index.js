@@ -15,7 +15,21 @@ const PORT = config.port;
 
 // Define CORS configuration
 const corsOptions = {
-  origin: process.env.CORS_ORIGIN || '*',
+  origin: function(origin, callback) {
+    const allowedOrigins = [
+      'https://elastic-finance.vercel.app',
+      'https://elastic-finance-en0ixws6b-mj-oneequalsones-projects.vercel.app',
+      // Add any other domains you need
+    ];
+    
+    // For development or non-browser requests
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      console.log(`Blocked origin: ${origin}`);
+      callback(null, false);
+    }
+  },
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
