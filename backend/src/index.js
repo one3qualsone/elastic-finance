@@ -17,10 +17,16 @@ const PORT = config.port;
 // In backend/src/index.js
 const corsOptions = {
   origin: function(origin, callback) {
-    // Allow all Vercel preview deployments of your project
+    const allowedOrigins = [
+      'https://elastic-finance.vercel.app',
+      'https://valueinvesting.oneequalsone.uk',
+      // Keep the pattern for development URLs
+      /https:\/\/elastic-finance-[a-z0-9]+-mj-oneequalsones-projects\.vercel\.app/
+    ];
+    
     if (!origin || 
-        origin === 'https://elastic-finance.vercel.app' || 
-        origin.match(/https:\/\/elastic-finance-[a-z0-9]+-mj-oneequalsones-projects\.vercel\.app/)) {
+        allowedOrigins.includes(origin) || 
+        (typeof allowedOrigins[2] === 'object' && allowedOrigins[2].test(origin))) {
       callback(null, true);
     } else {
       console.log(`Blocked origin: ${origin}`);
