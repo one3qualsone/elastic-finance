@@ -14,16 +14,13 @@ const app = express();
 const PORT = config.port; 
 
 // Define CORS configuration
+// In backend/src/index.js
 const corsOptions = {
   origin: function(origin, callback) {
-    const allowedOrigins = [
-      'https://elastic-finance.vercel.app',
-      'https://elastic-finance-en0ixws6b-mj-oneequalsones-projects.vercel.app',
-      // Add any other domains you need
-    ];
-    
-    // For development or non-browser requests
-    if (!origin || allowedOrigins.includes(origin)) {
+    // Allow all Vercel preview deployments of your project
+    if (!origin || 
+        origin === 'https://elastic-finance.vercel.app' || 
+        origin.match(/https:\/\/elastic-finance-[a-z0-9]+-mj-oneequalsones-projects\.vercel\.app/)) {
       callback(null, true);
     } else {
       console.log(`Blocked origin: ${origin}`);
