@@ -16,6 +16,7 @@ services:
       - elastic-finance-network
     depends_on:
       - backend
+    command: ["npm", "run", "dev"]
 
   backend:
     build:
