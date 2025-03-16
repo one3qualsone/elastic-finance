@@ -9,15 +9,16 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - NODE_ENV=production
+      - NODE_ENV=development  # Changed to development to match dev command
       - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL:-http://backend:4000/api}
     restart: always
     networks:
       - elastic-finance-network
     depends_on:
       - backend
-    command: ["npm", "run", "dev"]
-
+    # This is the key change - telling Next.js to bind to all interfaces
+    command: ["npm", "run", "dev", "--", "-H", "0.0.0.0"]
+    
   backend:
     build:
       context: ./backend

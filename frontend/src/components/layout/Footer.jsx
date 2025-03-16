@@ -52,7 +52,7 @@ export default function Footer() {
         </div>
         
         <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400 dark:text-gray-500">
-          <p>© {new Date().getFullYear()} | Open Source Value Investing Portfolio Project</p>
+          <p>© {new Date().getFullYear()} | Open Source Value Investing Project</p>
           <p className="mt-2 text-sm">
             Data provided by Yahoo Finance API. This website is for educational purposes only.
           </p>
