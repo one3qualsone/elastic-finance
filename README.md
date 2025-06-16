@@ -1,5 +1,8 @@
 # Elastic Finance
 
+Live site:
+!(valueinvesting)[https://valueinvesting.oneequalsone.uk/]
+
 A finance website built with Next.js, Tailwind CSS, and the Yahoo Finance API to help analyze investment opportunities according to value investing principles.
 
 ## Features
