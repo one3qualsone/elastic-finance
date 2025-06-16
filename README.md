@@ -32,7 +32,7 @@ A finance website built with Next.js, Tailwind CSS, and the Yahoo Finance API to
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/elastic-finance.git
+   git clone https://github.com/one3qualsone/elastic-finance.git
    cd elastic-finance
    ```
 
