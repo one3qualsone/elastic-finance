@@ -3,13 +3,13 @@
 Live site:
 https://valueinvesting.oneequalsone.uk/
 
-A finance website built with Next.js, Tailwind CSS, and the Yahoo Finance API to help analyze investment opportunities according to value investing principles.
+A finance website built with Next.js, Tailwind CSS, and the Yahoo Finance API to help analyse investment opportunities according to value investing principles.
 
 ## Features
 
 - **Educational Content**: Learn about value investing principles based on Warren Buffett's strategies
-- **Stock Analysis**: Track and analyze stocks using fundamental metrics
-- **Financial Data Visualization**: Interactive charts to visualize stock performance and financial metrics
+- **Stock Analysis**: Track and analyse stocks using fundamental metrics
+- **Financial Data Visualisation**: Interactive charts to visualise stock performance and financial metrics
 - **Value Investing Scores**: Get a bullish/bearish rating (1-10) based on value investing principles
 - **Dark Mode**: Toggle between light and dark themes for comfortable viewing
 
@@ -17,7 +17,7 @@ A finance website built with Next.js, Tailwind CSS, and the Yahoo Finance API to
 
 - **Frontend**: Next.js, Tailwind CSS, React
 - **Backend**: Node.js, Express
-- **Data Visualization**: Chart.js for financial charts
+- **Data Visualisation**: Chart.js for financial charts
 - **API Integration**: Yahoo Finance API (via yahoo-finance2)
 - **Containerization**: Docker and Docker Compose
 
